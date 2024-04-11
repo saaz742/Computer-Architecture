@@ -1,0 +1,27 @@
+module Register_File (
+	input [4:0] readdr1, readdr2, wraddr,
+	input [31:0] wrdata,
+	input clk, rst, RegWrite,
+	output [31:0] readata1, readata2
+	);
+
+	reg [31:0] Regfile [31:0];
+	integer k;
+	
+	assign readata1 = Regfile[readdr1];
+	assign readata2 = Regfile[readdr2];
+
+	always @(posedge clk or posedge rst) 
+	begin
+		if (rst==1'b1)
+		begin
+			for (k=0; k<32; k=k+1) 
+			begin
+				Regfile[k] = 32'b0;
+			end
+		end 
+		
+		else if (RegWrite == 1'b1) Regfile[wraddr] = wrdata; 
+	end
+
+endmodule

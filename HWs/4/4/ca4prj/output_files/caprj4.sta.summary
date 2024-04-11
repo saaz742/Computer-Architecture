@@ -1,0 +1,17 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 85C Model Minimum Pulse Width 'GR[0]'
+Slack : -0.428
+TNS   : -652.563
+
+Type  : Slow 900mV 0C Model Minimum Pulse Width 'GR[0]'
+Slack : -0.428
+TNS   : -729.523
+
+Type  : Fast 900mV 0C Model Minimum Pulse Width 'GR[0]'
+Slack : -0.242
+TNS   : -132.261
+
+------------------------------------------------------------

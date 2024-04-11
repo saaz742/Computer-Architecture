@@ -1,0 +1,7 @@
+verilog work "fp_multiplier.v"
+verilog work "fp_min.v"
+verilog work "fp_divider.v"
+verilog work "fp_adder.v"
+verilog work "FPALU.v"
+verilog work "alutest.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

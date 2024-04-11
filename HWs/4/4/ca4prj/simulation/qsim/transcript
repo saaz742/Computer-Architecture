@@ -1,0 +1,9 @@
+# do caprj4.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE vcom 10.1c Compiler 2012.07 Jul 27 2012
+# ** Error: (vcom-42) Unsupported ModelSim library format for "D:/prj/ca/ca4/simulation/qsim/work". (Format: 4)
+# 
+# ** Error: VHDL Compiler exiting
+# ** Error: C:/1modeltech_10.1c/win32/vcom failed.
+# Executing ONERROR command at macro ./caprj4.do line 3

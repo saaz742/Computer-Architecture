@@ -1,0 +1,982 @@
+TimeQuest Timing Analyzer report for controllersingle
+Wed May 19 18:17:13 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Progagation Delay
+ 34. Minimum Progagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 38. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 39. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 40. Clock Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths
+ 44. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; controllersingle                                                  ;
+; Device Family      ; Cyclone IV GX                                                     ;
+; Device Name        ; EP4CGX15BF14C6                                                    ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Enabled                                                           ;
++--------------------+-------------------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ; < 0.1%      ;
+;     Processors 7-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; func[0]    ; regDest     ;        ; 8.629  ; 9.150  ;        ;
+; func[0]    ; regWrite    ;        ; 8.093  ; 8.685  ;        ;
+; func[1]    ; regDest     ; 9.452  ; 9.252  ; 9.813  ; 9.753  ;
+; func[1]    ; regWrite    ; 8.987  ; 8.716  ; 9.348  ; 9.217  ;
+; func[2]    ; regDest     ; 8.813  ; 8.703  ; 9.233  ; 9.132  ;
+; func[2]    ; regWrite    ; 8.348  ; 8.167  ; 8.768  ; 8.596  ;
+; func[3]    ; regDest     ; 9.606  ; 9.498  ; 10.058 ; 9.918  ;
+; func[3]    ; regWrite    ; 9.141  ; 8.962  ; 9.593  ; 9.382  ;
+; func[4]    ; regDest     ;        ; 8.459  ; 8.968  ;        ;
+; func[4]    ; regWrite    ;        ; 7.923  ; 8.503  ;        ;
+; func[5]    ; regDest     ; 9.277  ;        ;        ; 9.569  ;
+; func[5]    ; regWrite    ; 8.812  ;        ;        ; 9.033  ;
+; in[0]      ; aluSrc      ; 8.019  ; 7.917  ; 8.449  ; 8.338  ;
+; in[0]      ; jump        ;        ; 7.543  ; 8.113  ;        ;
+; in[0]      ; memRead     ;        ; 10.080 ; 10.608 ;        ;
+; in[0]      ; memWrite    ; 8.613  ;        ;        ; 8.949  ;
+; in[0]      ; memtoReg    ;        ; 10.080 ; 10.608 ;        ;
+; in[0]      ; regDest     ;        ; 8.496  ; 8.989  ;        ;
+; in[0]      ; regWrite    ;        ; 7.960  ; 8.524  ;        ;
+; in[1]      ; aluSrc      ; 8.397  ;        ;        ; 8.822  ;
+; in[1]      ; branch      ;        ; 7.822  ; 8.388  ;        ;
+; in[1]      ; jump        ; 7.753  ;        ;        ; 8.083  ;
+; in[1]      ; memRead     ; 10.546 ;        ;        ; 10.975 ;
+; in[1]      ; memWrite    ; 8.933  ;        ;        ; 9.359  ;
+; in[1]      ; memtoReg    ; 10.546 ;        ;        ; 10.975 ;
+; in[1]      ; regDest     ;        ; 8.148  ; 8.628  ;        ;
+; in[1]      ; regWrite    ;        ; 7.612  ; 8.163  ;        ;
+; in[2]      ; aluSrc      ;        ; 5.627  ; 5.853  ;        ;
+; in[2]      ; branch      ; 5.604  ;        ;        ; 5.616  ;
+; in[2]      ; jump        ;        ; 5.057  ; 5.348  ;        ;
+; in[2]      ; memRead     ;        ; 7.780  ; 8.002  ;        ;
+; in[2]      ; memWrite    ;        ; 6.164  ; 6.389  ;        ;
+; in[2]      ; memtoReg    ;        ; 7.780  ; 8.002  ;        ;
+; in[2]      ; regDest     ; 5.512  ;        ;        ; 5.644  ;
+; in[3]      ; aluSrc      ; 7.894  ; 7.789  ; 8.309  ; 8.237  ;
+; in[3]      ; branch      ;        ; 8.164  ; 8.751  ;        ;
+; in[3]      ; jump        ;        ; 7.585  ; 8.143  ;        ;
+; in[3]      ; memRead     ;        ; 9.950  ; 10.465 ;        ;
+; in[3]      ; memWrite    ; 8.486  ;        ;        ; 8.846  ;
+; in[3]      ; memtoReg    ;        ; 9.950  ; 10.465 ;        ;
+; in[3]      ; regDest     ; 8.561  ;        ;        ; 8.978  ;
+; in[3]      ; regWrite    ; 8.096  ;        ;        ; 8.442  ;
+; in[4]      ; aluSrc      ;        ; 8.412  ; 8.837  ;        ;
+; in[4]      ; branch      ;        ; 8.363  ; 8.879  ;        ;
+; in[4]      ; jump        ;        ; 7.975  ; 8.475  ;        ;
+; in[4]      ; memRead     ;        ; 10.565 ; 10.986 ;        ;
+; in[4]      ; memWrite    ;        ; 8.949  ; 9.373  ;        ;
+; in[4]      ; memtoReg    ;        ; 10.565 ; 10.986 ;        ;
+; in[4]      ; regDest     ;        ; 8.978  ; 9.352  ;        ;
+; in[4]      ; regWrite    ;        ; 8.442  ; 8.887  ;        ;
+; in[5]      ; aluSrc      ; 5.929  ;        ;        ; 6.095  ;
+; in[5]      ; branch      ;        ; 5.579  ; 5.904  ;        ;
+; in[5]      ; jump        ;        ; 5.191  ; 5.500  ;        ;
+; in[5]      ; memRead     ; 8.078  ;        ;        ; 8.248  ;
+; in[5]      ; memWrite    ; 6.465  ;        ;        ; 6.632  ;
+; in[5]      ; memtoReg    ; 8.078  ;        ;        ; 8.248  ;
+; in[5]      ; regDest     ;        ; 6.194  ; 6.377  ;        ;
+; in[5]      ; regWrite    ;        ; 5.658  ; 5.912  ;        ;
+; one        ; regDest     ; 8.626  ;        ;        ; 8.965  ;
+; one        ; regWrite    ; 8.161  ;        ;        ; 8.429  ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; func[0]    ; regDest     ;        ; 8.290  ; 8.802  ;        ;
+; func[0]    ; regWrite    ;        ; 7.774  ; 8.357  ;        ;
+; func[1]    ; regDest     ; 9.085  ; 8.889  ; 9.437  ; 9.376  ;
+; func[1]    ; regWrite    ; 8.640  ; 8.373  ; 8.992  ; 8.860  ;
+; func[2]    ; regDest     ; 8.472  ; 8.362  ; 8.881  ; 8.780  ;
+; func[2]    ; regWrite    ; 8.027  ; 7.846  ; 8.436  ; 8.264  ;
+; func[3]    ; regDest     ; 9.234  ; 9.125  ; 9.674  ; 9.535  ;
+; func[3]    ; regWrite    ; 8.789  ; 8.609  ; 9.229  ; 9.019  ;
+; func[4]    ; regDest     ;        ; 8.126  ; 8.627  ;        ;
+; func[4]    ; regWrite    ;        ; 7.610  ; 8.182  ;        ;
+; func[5]    ; regDest     ; 8.852  ;        ;        ; 9.149  ;
+; func[5]    ; regWrite    ; 8.407  ;        ;        ; 8.633  ;
+; in[0]      ; aluSrc      ; 7.749  ; 7.647  ; 8.168  ; 8.057  ;
+; in[0]      ; jump        ;        ; 7.287  ; 7.846  ;        ;
+; in[0]      ; memRead     ;        ; 9.724  ; 10.243 ;        ;
+; in[0]      ; memWrite    ; 8.311  ;        ;        ; 8.635  ;
+; in[0]      ; memtoReg    ;        ; 9.724  ; 10.243 ;        ;
+; in[0]      ; regDest     ;        ; 8.236  ; 8.716  ;        ;
+; in[0]      ; regWrite    ;        ; 7.684  ; 8.237  ;        ;
+; in[1]      ; aluSrc      ; 8.051  ;        ;        ; 8.437  ;
+; in[1]      ; branch      ;        ; 7.551  ; 8.105  ;        ;
+; in[1]      ; jump        ; 7.494  ;        ;        ; 7.811  ;
+; in[1]      ; memRead     ; 10.164 ;        ;        ; 10.571 ;
+; in[1]      ; memWrite    ; 8.605  ;        ;        ; 9.005  ;
+; in[1]      ; memtoReg    ; 10.164 ;        ;        ; 10.571 ;
+; in[1]      ; regDest     ;        ; 7.900  ; 8.369  ;        ;
+; in[1]      ; regWrite    ;        ; 7.348  ; 7.890  ;        ;
+; in[2]      ; aluSrc      ;        ; 5.371  ; 5.625  ;        ;
+; in[2]      ; branch      ; 5.432  ;        ;        ; 5.448  ;
+; in[2]      ; jump        ;        ; 4.908  ; 5.199  ;        ;
+; in[2]      ; memRead     ;        ; 7.505  ; 7.738  ;        ;
+; in[2]      ; memWrite    ;        ; 5.939  ; 6.179  ;        ;
+; in[2]      ; memtoReg    ;        ; 7.505  ; 7.738  ;        ;
+; in[2]      ; regDest     ; 5.377  ;        ;        ; 5.505  ;
+; in[3]      ; aluSrc      ; 7.628  ; 7.524  ; 8.033  ; 7.960  ;
+; in[3]      ; branch      ;        ; 7.879  ; 8.453  ;        ;
+; in[3]      ; jump        ;        ; 7.328  ; 7.875  ;        ;
+; in[3]      ; memRead     ;        ; 9.599  ; 10.105 ;        ;
+; in[3]      ; memWrite    ; 8.188  ;        ;        ; 8.536  ;
+; in[3]      ; memtoReg    ;        ; 9.599  ; 10.105 ;        ;
+; in[3]      ; regDest     ; 8.297  ;        ;        ; 8.705  ;
+; in[3]      ; regWrite    ; 7.818  ;        ;        ; 8.153  ;
+; in[4]      ; aluSrc      ;        ; 8.037  ; 8.481  ;        ;
+; in[4]      ; branch      ;        ; 8.069  ; 8.575  ;        ;
+; in[4]      ; jump        ;        ; 7.700  ; 8.193  ;        ;
+; in[4]      ; memRead     ;        ; 10.171 ; 10.594 ;        ;
+; in[4]      ; memWrite    ;        ; 8.605  ; 9.035  ;        ;
+; in[4]      ; memtoReg    ;        ; 10.171 ; 10.594 ;        ;
+; in[4]      ; regDest     ;        ; 8.698  ; 9.063  ;        ;
+; in[4]      ; regWrite    ;        ; 8.146  ; 8.584  ;        ;
+; in[5]      ; aluSrc      ; 5.690  ;        ;        ; 5.828  ;
+; in[5]      ; branch      ;        ; 5.405  ; 5.728  ;        ;
+; in[5]      ; jump        ;        ; 5.036  ; 5.346  ;        ;
+; in[5]      ; memRead     ; 7.803  ;        ;        ; 7.962  ;
+; in[5]      ; memWrite    ; 6.244  ;        ;        ; 6.396  ;
+; in[5]      ; memtoReg    ; 7.803  ;        ;        ; 7.962  ;
+; in[5]      ; regDest     ;        ; 6.034  ; 6.216  ;        ;
+; in[5]      ; regWrite    ;        ; 5.482  ; 5.737  ;        ;
+; one        ; regDest     ; 8.292  ;        ;        ; 8.619  ;
+; one        ; regWrite    ; 7.847  ;        ;        ; 8.103  ;
++------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; func[0]    ; regDest     ;       ; 7.591 ; 8.013 ;       ;
+; func[0]    ; regWrite    ;       ; 7.146 ; 7.632 ;       ;
+; func[1]    ; regDest     ; 8.336 ; 8.170 ; 8.597 ; 8.559 ;
+; func[1]    ; regWrite    ; 7.955 ; 7.725 ; 8.216 ; 8.114 ;
+; func[2]    ; regDest     ; 7.744 ; 7.661 ; 8.084 ; 8.009 ;
+; func[2]    ; regWrite    ; 7.363 ; 7.216 ; 7.703 ; 7.564 ;
+; func[3]    ; regDest     ; 8.485 ; 8.404 ; 8.828 ; 8.717 ;
+; func[3]    ; regWrite    ; 8.104 ; 7.959 ; 8.447 ; 8.272 ;
+; func[4]    ; regDest     ;       ; 7.432 ; 7.857 ;       ;
+; func[4]    ; regWrite    ;       ; 6.987 ; 7.476 ;       ;
+; func[5]    ; regDest     ; 8.165 ;       ;       ; 8.399 ;
+; func[5]    ; regWrite    ; 7.784 ;       ;       ; 7.954 ;
+; in[0]      ; aluSrc      ; 7.144 ; 6.999 ; 7.461 ; 7.308 ;
+; in[0]      ; jump        ;       ; 6.663 ; 7.158 ;       ;
+; in[0]      ; memRead     ;       ; 8.951 ; 9.446 ;       ;
+; in[0]      ; memWrite    ; 7.659 ;       ;       ; 7.869 ;
+; in[0]      ; memtoReg    ;       ; 8.951 ; 9.446 ;       ;
+; in[0]      ; regDest     ;       ; 7.486 ; 7.880 ;       ;
+; in[0]      ; regWrite    ;       ; 7.041 ; 7.499 ;       ;
+; in[1]      ; aluSrc      ; 7.467 ;       ;       ; 7.736 ;
+; in[1]      ; branch      ;       ; 6.901 ; 7.389 ;       ;
+; in[1]      ; jump        ; 6.890 ;       ;       ; 7.083 ;
+; in[1]      ; memRead     ; 9.442 ;       ;       ; 9.678 ;
+; in[1]      ; memWrite    ; 7.930 ;       ;       ; 8.229 ;
+; in[1]      ; memtoReg    ; 9.442 ;       ;       ; 9.678 ;
+; in[1]      ; regDest     ;       ; 7.155 ; 7.562 ;       ;
+; in[1]      ; regWrite    ;       ; 6.710 ; 7.181 ;       ;
+; in[2]      ; aluSrc      ;       ; 5.014 ; 5.300 ;       ;
+; in[2]      ; branch      ; 5.029 ;       ;       ; 5.033 ;
+; in[2]      ; jump        ;       ; 4.508 ; 4.842 ;       ;
+; in[2]      ; memRead     ;       ; 6.956 ; 7.275 ;       ;
+; in[2]      ; memWrite    ;       ; 5.507 ; 5.763 ;       ;
+; in[2]      ; memtoReg    ;       ; 6.956 ; 7.275 ;       ;
+; in[2]      ; regDest     ; 4.896 ;       ;       ; 5.019 ;
+; in[3]      ; aluSrc      ; 7.024 ; 6.877 ; 7.341 ; 7.223 ;
+; in[3]      ; branch      ;       ; 7.217 ; 7.707 ;       ;
+; in[3]      ; jump        ;       ; 6.695 ; 7.184 ;       ;
+; in[3]      ; memRead     ;       ; 8.827 ; 9.323 ;       ;
+; in[3]      ; memWrite    ; 7.536 ;       ;       ; 7.781 ;
+; in[3]      ; memtoReg    ;       ; 8.827 ; 9.323 ;       ;
+; in[3]      ; regDest     ; 7.553 ;       ;       ; 7.849 ;
+; in[3]      ; regWrite    ; 7.172 ;       ;       ; 7.404 ;
+; in[4]      ; aluSrc      ;       ; 7.416 ; 7.824 ;       ;
+; in[4]      ; branch      ;       ; 7.382 ; 7.838 ;       ;
+; in[4]      ; jump        ;       ; 7.025 ; 7.497 ;       ;
+; in[4]      ; memRead     ;       ; 9.358 ; 9.799 ;       ;
+; in[4]      ; memWrite    ;       ; 7.909 ; 8.287 ;       ;
+; in[4]      ; memtoReg    ;       ; 9.358 ; 9.799 ;       ;
+; in[4]      ; regDest     ;       ; 7.890 ; 8.216 ;       ;
+; in[4]      ; regWrite    ;       ; 7.445 ; 7.835 ;       ;
+; in[5]      ; aluSrc      ; 5.348 ;       ;       ; 5.446 ;
+; in[5]      ; branch      ;       ; 4.982 ; 5.319 ;       ;
+; in[5]      ; jump        ;       ; 4.625 ; 4.978 ;       ;
+; in[5]      ; memRead     ; 7.323 ;       ;       ; 7.388 ;
+; in[5]      ; memWrite    ; 5.811 ;       ;       ; 5.939 ;
+; in[5]      ; memtoReg    ; 7.323 ;       ;       ; 7.388 ;
+; in[5]      ; regDest     ;       ; 5.490 ; 5.697 ;       ;
+; in[5]      ; regWrite    ;       ; 5.045 ; 5.316 ;       ;
+; one        ; regDest     ; 7.594 ;       ;       ; 7.848 ;
+; one        ; regWrite    ; 7.213 ;       ;       ; 7.403 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; func[0]    ; regDest     ;       ; 7.294 ; 7.704 ;       ;
+; func[0]    ; regWrite    ;       ; 6.869 ; 7.342 ;       ;
+; func[1]    ; regDest     ; 8.009 ; 7.850 ; 8.266 ; 8.229 ;
+; func[1]    ; regWrite    ; 7.647 ; 7.425 ; 7.904 ; 7.804 ;
+; func[2]    ; regDest     ; 7.440 ; 7.361 ; 7.774 ; 7.701 ;
+; func[2]    ; regWrite    ; 7.078 ; 6.936 ; 7.412 ; 7.276 ;
+; func[3]    ; regDest     ; 8.152 ; 8.075 ; 8.487 ; 8.382 ;
+; func[3]    ; regWrite    ; 7.790 ; 7.650 ; 8.125 ; 7.957 ;
+; func[4]    ; regDest     ;       ; 7.141 ; 7.555 ;       ;
+; func[4]    ; regWrite    ;       ; 6.716 ; 7.193 ;       ;
+; func[5]    ; regDest     ; 7.790 ;       ;       ; 8.028 ;
+; func[5]    ; regWrite    ; 7.428 ;       ;       ; 7.603 ;
+; in[0]      ; aluSrc      ; 6.902 ; 6.759 ; 7.212 ; 7.063 ;
+; in[0]      ; jump        ;       ; 6.436 ; 6.921 ;       ;
+; in[0]      ; memRead     ;       ; 8.634 ; 9.119 ;       ;
+; in[0]      ; memWrite    ; 7.390 ;       ;       ; 7.596 ;
+; in[0]      ; memtoReg    ;       ; 8.634 ; 9.119 ;       ;
+; in[0]      ; regDest     ;       ; 7.255 ; 7.638 ;       ;
+; in[0]      ; regWrite    ;       ; 6.797 ; 7.243 ;       ;
+; in[1]      ; aluSrc      ; 7.159 ;       ;       ; 7.397 ;
+; in[1]      ; branch      ;       ; 6.660 ; 7.139 ;       ;
+; in[1]      ; jump        ; 6.658 ;       ;       ; 6.845 ;
+; in[1]      ; memRead     ; 9.097 ;       ;       ; 9.321 ;
+; in[1]      ; memWrite    ; 7.639 ;       ;       ; 7.921 ;
+; in[1]      ; memtoReg    ; 9.097 ;       ;       ; 9.321 ;
+; in[1]      ; regDest     ;       ; 6.936 ; 7.333 ;       ;
+; in[1]      ; regWrite    ;       ; 6.478 ; 6.938 ;       ;
+; in[2]      ; aluSrc      ;       ; 4.784 ; 5.089 ;       ;
+; in[2]      ; branch      ; 4.873 ;       ;       ; 4.880 ;
+; in[2]      ; jump        ;       ; 4.373 ; 4.704 ;       ;
+; in[2]      ; memRead     ;       ; 6.708 ; 7.027 ;       ;
+; in[2]      ; memWrite    ;       ; 5.308 ; 5.569 ;       ;
+; in[2]      ; memtoReg    ;       ; 6.708 ; 7.027 ;       ;
+; in[2]      ; regDest     ; 4.773 ;       ;       ; 4.895 ;
+; in[3]      ; aluSrc      ; 6.786 ; 6.641 ; 7.097 ; 6.980 ;
+; in[3]      ; branch      ;       ; 6.965 ; 7.444 ;       ;
+; in[3]      ; jump        ;       ; 6.467 ; 6.946 ;       ;
+; in[3]      ; memRead     ;       ; 8.514 ; 9.001 ;       ;
+; in[3]      ; memWrite    ; 7.272 ;       ;       ; 7.510 ;
+; in[3]      ; memtoReg    ;       ; 8.514 ; 9.001 ;       ;
+; in[3]      ; regDest     ; 7.320 ;       ;       ; 7.609 ;
+; in[3]      ; regWrite    ; 6.925 ;       ;       ; 7.151 ;
+; in[4]      ; aluSrc      ;       ; 7.083 ; 7.506 ;       ;
+; in[4]      ; branch      ;       ; 7.123 ; 7.570 ;       ;
+; in[4]      ; jump        ;       ; 6.784 ; 7.247 ;       ;
+; in[4]      ; memRead     ;       ; 9.007 ; 9.444 ;       ;
+; in[4]      ; memWrite    ;       ; 7.607 ; 7.986 ;       ;
+; in[4]      ; memtoReg    ;       ; 9.007 ; 9.444 ;       ;
+; in[4]      ; regDest     ;       ; 7.642 ; 7.961 ;       ;
+; in[4]      ; regWrite    ;       ; 7.184 ; 7.566 ;       ;
+; in[5]      ; aluSrc      ; 5.128 ;       ;       ; 5.204 ;
+; in[5]      ; branch      ;       ; 4.825 ; 5.157 ;       ;
+; in[5]      ; jump        ;       ; 4.486 ; 4.834 ;       ;
+; in[5]      ; memRead     ; 7.066 ;       ;       ; 7.128 ;
+; in[5]      ; memWrite    ; 5.608 ;       ;       ; 5.728 ;
+; in[5]      ; memtoReg    ; 7.066 ;       ;       ; 7.128 ;
+; in[5]      ; regDest     ;       ; 5.344 ; 5.548 ;       ;
+; in[5]      ; regWrite    ;       ; 4.886 ; 5.153 ;       ;
+; one        ; regDest     ; 7.295 ;       ;       ; 7.546 ;
+; one        ; regWrite    ; 6.933 ;       ;       ; 7.121 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; func[0]    ; regDest     ;       ; 5.151 ; 5.752 ;       ;
+; func[0]    ; regWrite    ;       ; 4.727 ; 5.330 ;       ;
+; func[1]    ; regDest     ; 5.584 ; 5.496 ; 6.131 ; 6.124 ;
+; func[1]    ; regWrite    ; 5.162 ; 5.072 ; 5.709 ; 5.700 ;
+; func[2]    ; regDest     ; 5.233 ; 5.191 ; 5.784 ; 5.749 ;
+; func[2]    ; regWrite    ; 4.811 ; 4.767 ; 5.362 ; 5.325 ;
+; func[3]    ; regDest     ; 5.685 ; 5.646 ; 6.297 ; 6.239 ;
+; func[3]    ; regWrite    ; 5.263 ; 5.222 ; 5.875 ; 5.815 ;
+; func[4]    ; regDest     ;       ; 5.059 ; 5.650 ;       ;
+; func[4]    ; regWrite    ;       ; 4.635 ; 5.228 ;       ;
+; func[5]    ; regDest     ; 5.490 ;       ;       ; 6.015 ;
+; func[5]    ; regWrite    ; 5.068 ;       ;       ; 5.591 ;
+; in[0]      ; aluSrc      ; 4.632 ; 4.685 ; 5.231 ; 5.277 ;
+; in[0]      ; jump        ;       ; 4.450 ; 5.035 ;       ;
+; in[0]      ; memRead     ;       ; 6.068 ; 6.470 ;       ;
+; in[0]      ; memWrite    ; 4.983 ;       ;       ; 5.662 ;
+; in[0]      ; memtoReg    ;       ; 6.068 ; 6.470 ;       ;
+; in[0]      ; regDest     ;       ; 5.095 ; 5.672 ;       ;
+; in[0]      ; regWrite    ;       ; 4.671 ; 5.250 ;       ;
+; in[1]      ; aluSrc      ; 4.838 ;       ;       ; 5.525 ;
+; in[1]      ; branch      ;       ; 4.626 ; 5.150 ;       ;
+; in[1]      ; jump        ; 4.461 ;       ;       ; 5.073 ;
+; in[1]      ; memRead     ; 6.067 ;       ;       ; 6.899 ;
+; in[1]      ; memWrite    ; 5.152 ;       ;       ; 5.867 ;
+; in[1]      ; memtoReg    ; 6.067 ;       ;       ; 6.899 ;
+; in[1]      ; regDest     ;       ; 4.899 ; 5.439 ;       ;
+; in[1]      ; regWrite    ;       ; 4.475 ; 5.017 ;       ;
+; in[2]      ; aluSrc      ;       ; 3.382 ; 3.644 ;       ;
+; in[2]      ; branch      ; 3.240 ;       ;       ; 3.619 ;
+; in[2]      ; jump        ;       ; 3.028 ; 3.346 ;       ;
+; in[2]      ; memRead     ;       ; 4.756 ; 4.873 ;       ;
+; in[2]      ; memWrite    ;       ; 3.724 ; 3.958 ;       ;
+; in[2]      ; memtoReg    ;       ; 4.756 ; 4.873 ;       ;
+; in[2]      ; regDest     ; 3.352 ;       ;       ; 3.725 ;
+; in[3]      ; aluSrc      ; 4.573 ; 4.622 ; 5.140 ; 5.208 ;
+; in[3]      ; branch      ;       ; 4.825 ; 5.380 ;       ;
+; in[3]      ; jump        ;       ; 4.480 ; 5.049 ;       ;
+; in[3]      ; memRead     ;       ; 6.002 ; 6.376 ;       ;
+; in[3]      ; memWrite    ; 4.921 ;       ;       ; 5.590 ;
+; in[3]      ; memtoReg    ;       ; 6.002 ; 6.376 ;       ;
+; in[3]      ; regDest     ; 5.084 ;       ;       ; 5.710 ;
+; in[3]      ; regWrite    ; 4.662 ;       ;       ; 5.286 ;
+; in[4]      ; aluSrc      ;       ; 4.952 ; 5.416 ;       ;
+; in[4]      ; branch      ;       ; 4.921 ; 5.423 ;       ;
+; in[4]      ; jump        ;       ; 4.676 ; 5.201 ;       ;
+; in[4]      ; memRead     ;       ; 6.326 ; 6.645 ;       ;
+; in[4]      ; memWrite    ;       ; 5.294 ; 5.730 ;       ;
+; in[4]      ; memtoReg    ;       ; 6.326 ; 6.645 ;       ;
+; in[4]      ; regDest     ;       ; 5.350 ; 5.839 ;       ;
+; in[4]      ; regWrite    ;       ; 4.926 ; 5.417 ;       ;
+; in[5]      ; aluSrc      ; 3.431 ;       ;       ; 3.891 ;
+; in[5]      ; branch      ;       ; 3.350 ; 3.650 ;       ;
+; in[5]      ; jump        ;       ; 3.105 ; 3.428 ;       ;
+; in[5]      ; memRead     ; 4.660 ;       ;       ; 5.265 ;
+; in[5]      ; memWrite    ; 3.745 ;       ;       ; 4.233 ;
+; in[5]      ; memtoReg    ; 4.660 ;       ;       ; 5.265 ;
+; in[5]      ; regDest     ;       ; 3.779 ; 4.066 ;       ;
+; in[5]      ; regWrite    ;       ; 3.355 ; 3.644 ;       ;
+; one        ; regDest     ; 5.120 ;       ;       ; 5.682 ;
+; one        ; regWrite    ; 4.698 ;       ;       ; 5.258 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; func[0]    ; regDest     ;       ; 4.952 ; 5.544 ;       ;
+; func[0]    ; regWrite    ;       ; 4.538 ; 5.135 ;       ;
+; func[1]    ; regDest     ; 5.367 ; 5.285 ; 5.907 ; 5.901 ;
+; func[1]    ; regWrite    ; 4.958 ; 4.871 ; 5.498 ; 5.487 ;
+; func[2]    ; regDest     ; 5.031 ; 4.991 ; 5.576 ; 5.543 ;
+; func[2]    ; regWrite    ; 4.622 ; 4.577 ; 5.167 ; 5.129 ;
+; func[3]    ; regDest     ; 5.465 ; 5.429 ; 6.068 ; 6.013 ;
+; func[3]    ; regWrite    ; 5.056 ; 5.015 ; 5.659 ; 5.599 ;
+; func[4]    ; regDest     ;       ; 4.863 ; 5.447 ;       ;
+; func[4]    ; regWrite    ;       ; 4.449 ; 5.038 ;       ;
+; func[5]    ; regDest     ; 5.240 ;       ;       ; 5.767 ;
+; func[5]    ; regWrite    ; 4.831 ;       ;       ; 5.353 ;
+; in[0]      ; aluSrc      ; 4.473 ; 4.524 ; 5.063 ; 5.107 ;
+; in[0]      ; jump        ;       ; 4.298 ; 4.875 ;       ;
+; in[0]      ; memRead     ;       ; 5.852 ; 6.254 ;       ;
+; in[0]      ; memWrite    ; 4.805 ;       ;       ; 5.473 ;
+; in[0]      ; memtoReg    ;       ; 5.852 ; 6.254 ;       ;
+; in[0]      ; regDest     ;       ; 4.941 ; 5.509 ;       ;
+; in[0]      ; regWrite    ;       ; 4.507 ; 5.078 ;       ;
+; in[1]      ; aluSrc      ; 4.638 ;       ;       ; 5.295 ;
+; in[1]      ; branch      ;       ; 4.463 ; 4.982 ;       ;
+; in[1]      ; jump        ; 4.308 ;       ;       ; 4.911 ;
+; in[1]      ; memRead     ; 5.847 ;       ;       ; 6.649 ;
+; in[1]      ; memWrite    ; 4.962 ;       ;       ; 5.651 ;
+; in[1]      ; memtoReg    ; 5.847 ;       ;       ; 6.649 ;
+; in[1]      ; regDest     ;       ; 4.752 ; 5.285 ;       ;
+; in[1]      ; regWrite    ;       ; 4.318 ; 4.854 ;       ;
+; in[2]      ; aluSrc      ;       ; 3.229 ; 3.511 ;       ;
+; in[2]      ; branch      ; 3.138 ;       ;       ; 3.517 ;
+; in[2]      ; jump        ;       ; 2.937 ; 3.257 ;       ;
+; in[2]      ; memRead     ;       ; 4.583 ; 4.720 ;       ;
+; in[2]      ; memWrite    ;       ; 3.585 ; 3.835 ;       ;
+; in[2]      ; memtoReg    ;       ; 4.583 ; 4.720 ;       ;
+; in[2]      ; regDest     ; 3.270 ;       ;       ; 3.642 ;
+; in[3]      ; aluSrc      ; 4.415 ; 4.461 ; 4.975 ; 5.040 ;
+; in[3]      ; branch      ;       ; 4.654 ; 5.204 ;       ;
+; in[3]      ; jump        ;       ; 4.325 ; 4.887 ;       ;
+; in[3]      ; memRead     ;       ; 5.788 ; 6.163 ;       ;
+; in[3]      ; memWrite    ; 4.746 ;       ;       ; 5.403 ;
+; in[3]      ; memtoReg    ;       ; 5.788 ; 6.163 ;       ;
+; in[3]      ; regDest     ; 4.929 ;       ;       ; 5.546 ;
+; in[3]      ; regWrite    ; 4.498 ;       ;       ; 5.112 ;
+; in[4]      ; aluSrc      ;       ; 4.731 ; 5.208 ;       ;
+; in[4]      ; branch      ;       ; 4.746 ; 5.243 ;       ;
+; in[4]      ; jump        ;       ; 4.513 ; 5.035 ;       ;
+; in[4]      ; memRead     ;       ; 6.085 ; 6.417 ;       ;
+; in[4]      ; memWrite    ;       ; 5.087 ; 5.532 ;       ;
+; in[4]      ; memtoReg    ;       ; 6.085 ; 6.417 ;       ;
+; in[4]      ; regDest     ;       ; 5.183 ; 5.669 ;       ;
+; in[4]      ; regWrite    ;       ; 4.749 ; 5.238 ;       ;
+; in[5]      ; aluSrc      ; 3.292 ;       ;       ; 3.731 ;
+; in[5]      ; branch      ;       ; 3.244 ; 3.545 ;       ;
+; in[5]      ; jump        ;       ; 3.011 ; 3.337 ;       ;
+; in[5]      ; memRead     ; 4.501 ;       ;       ; 5.085 ;
+; in[5]      ; memWrite    ; 3.616 ;       ;       ; 4.087 ;
+; in[5]      ; memtoReg    ; 4.501 ;       ;       ; 5.085 ;
+; in[5]      ; regDest     ;       ; 3.681 ; 3.971 ;       ;
+; in[5]      ; regWrite    ;       ; 3.247 ; 3.540 ;       ;
+; one        ; regDest     ; 4.922 ;       ;       ; 5.477 ;
+; one        ; regWrite    ; 4.513 ;       ;       ; 5.063 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; func[0]    ; regDest     ;        ; 8.629  ; 9.150  ;        ;
+; func[0]    ; regWrite    ;        ; 8.093  ; 8.685  ;        ;
+; func[1]    ; regDest     ; 9.452  ; 9.252  ; 9.813  ; 9.753  ;
+; func[1]    ; regWrite    ; 8.987  ; 8.716  ; 9.348  ; 9.217  ;
+; func[2]    ; regDest     ; 8.813  ; 8.703  ; 9.233  ; 9.132  ;
+; func[2]    ; regWrite    ; 8.348  ; 8.167  ; 8.768  ; 8.596  ;
+; func[3]    ; regDest     ; 9.606  ; 9.498  ; 10.058 ; 9.918  ;
+; func[3]    ; regWrite    ; 9.141  ; 8.962  ; 9.593  ; 9.382  ;
+; func[4]    ; regDest     ;        ; 8.459  ; 8.968  ;        ;
+; func[4]    ; regWrite    ;        ; 7.923  ; 8.503  ;        ;
+; func[5]    ; regDest     ; 9.277  ;        ;        ; 9.569  ;
+; func[5]    ; regWrite    ; 8.812  ;        ;        ; 9.033  ;
+; in[0]      ; aluSrc      ; 8.019  ; 7.917  ; 8.449  ; 8.338  ;
+; in[0]      ; jump        ;        ; 7.543  ; 8.113  ;        ;
+; in[0]      ; memRead     ;        ; 10.080 ; 10.608 ;        ;
+; in[0]      ; memWrite    ; 8.613  ;        ;        ; 8.949  ;
+; in[0]      ; memtoReg    ;        ; 10.080 ; 10.608 ;        ;
+; in[0]      ; regDest     ;        ; 8.496  ; 8.989  ;        ;
+; in[0]      ; regWrite    ;        ; 7.960  ; 8.524  ;        ;
+; in[1]      ; aluSrc      ; 8.397  ;        ;        ; 8.822  ;
+; in[1]      ; branch      ;        ; 7.822  ; 8.388  ;        ;
+; in[1]      ; jump        ; 7.753  ;        ;        ; 8.083  ;
+; in[1]      ; memRead     ; 10.546 ;        ;        ; 10.975 ;
+; in[1]      ; memWrite    ; 8.933  ;        ;        ; 9.359  ;
+; in[1]      ; memtoReg    ; 10.546 ;        ;        ; 10.975 ;
+; in[1]      ; regDest     ;        ; 8.148  ; 8.628  ;        ;
+; in[1]      ; regWrite    ;        ; 7.612  ; 8.163  ;        ;
+; in[2]      ; aluSrc      ;        ; 5.627  ; 5.853  ;        ;
+; in[2]      ; branch      ; 5.604  ;        ;        ; 5.616  ;
+; in[2]      ; jump        ;        ; 5.057  ; 5.348  ;        ;
+; in[2]      ; memRead     ;        ; 7.780  ; 8.002  ;        ;
+; in[2]      ; memWrite    ;        ; 6.164  ; 6.389  ;        ;
+; in[2]      ; memtoReg    ;        ; 7.780  ; 8.002  ;        ;
+; in[2]      ; regDest     ; 5.512  ;        ;        ; 5.644  ;
+; in[3]      ; aluSrc      ; 7.894  ; 7.789  ; 8.309  ; 8.237  ;
+; in[3]      ; branch      ;        ; 8.164  ; 8.751  ;        ;
+; in[3]      ; jump        ;        ; 7.585  ; 8.143  ;        ;
+; in[3]      ; memRead     ;        ; 9.950  ; 10.465 ;        ;
+; in[3]      ; memWrite    ; 8.486  ;        ;        ; 8.846  ;
+; in[3]      ; memtoReg    ;        ; 9.950  ; 10.465 ;        ;
+; in[3]      ; regDest     ; 8.561  ;        ;        ; 8.978  ;
+; in[3]      ; regWrite    ; 8.096  ;        ;        ; 8.442  ;
+; in[4]      ; aluSrc      ;        ; 8.412  ; 8.837  ;        ;
+; in[4]      ; branch      ;        ; 8.363  ; 8.879  ;        ;
+; in[4]      ; jump        ;        ; 7.975  ; 8.475  ;        ;
+; in[4]      ; memRead     ;        ; 10.565 ; 10.986 ;        ;
+; in[4]      ; memWrite    ;        ; 8.949  ; 9.373  ;        ;
+; in[4]      ; memtoReg    ;        ; 10.565 ; 10.986 ;        ;
+; in[4]      ; regDest     ;        ; 8.978  ; 9.352  ;        ;
+; in[4]      ; regWrite    ;        ; 8.442  ; 8.887  ;        ;
+; in[5]      ; aluSrc      ; 5.929  ;        ;        ; 6.095  ;
+; in[5]      ; branch      ;        ; 5.579  ; 5.904  ;        ;
+; in[5]      ; jump        ;        ; 5.191  ; 5.500  ;        ;
+; in[5]      ; memRead     ; 8.078  ;        ;        ; 8.248  ;
+; in[5]      ; memWrite    ; 6.465  ;        ;        ; 6.632  ;
+; in[5]      ; memtoReg    ; 8.078  ;        ;        ; 8.248  ;
+; in[5]      ; regDest     ;        ; 6.194  ; 6.377  ;        ;
+; in[5]      ; regWrite    ;        ; 5.658  ; 5.912  ;        ;
+; one        ; regDest     ; 8.626  ;        ;        ; 8.965  ;
+; one        ; regWrite    ; 8.161  ;        ;        ; 8.429  ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; func[0]    ; regDest     ;       ; 4.952 ; 5.544 ;       ;
+; func[0]    ; regWrite    ;       ; 4.538 ; 5.135 ;       ;
+; func[1]    ; regDest     ; 5.367 ; 5.285 ; 5.907 ; 5.901 ;
+; func[1]    ; regWrite    ; 4.958 ; 4.871 ; 5.498 ; 5.487 ;
+; func[2]    ; regDest     ; 5.031 ; 4.991 ; 5.576 ; 5.543 ;
+; func[2]    ; regWrite    ; 4.622 ; 4.577 ; 5.167 ; 5.129 ;
+; func[3]    ; regDest     ; 5.465 ; 5.429 ; 6.068 ; 6.013 ;
+; func[3]    ; regWrite    ; 5.056 ; 5.015 ; 5.659 ; 5.599 ;
+; func[4]    ; regDest     ;       ; 4.863 ; 5.447 ;       ;
+; func[4]    ; regWrite    ;       ; 4.449 ; 5.038 ;       ;
+; func[5]    ; regDest     ; 5.240 ;       ;       ; 5.767 ;
+; func[5]    ; regWrite    ; 4.831 ;       ;       ; 5.353 ;
+; in[0]      ; aluSrc      ; 4.473 ; 4.524 ; 5.063 ; 5.107 ;
+; in[0]      ; jump        ;       ; 4.298 ; 4.875 ;       ;
+; in[0]      ; memRead     ;       ; 5.852 ; 6.254 ;       ;
+; in[0]      ; memWrite    ; 4.805 ;       ;       ; 5.473 ;
+; in[0]      ; memtoReg    ;       ; 5.852 ; 6.254 ;       ;
+; in[0]      ; regDest     ;       ; 4.941 ; 5.509 ;       ;
+; in[0]      ; regWrite    ;       ; 4.507 ; 5.078 ;       ;
+; in[1]      ; aluSrc      ; 4.638 ;       ;       ; 5.295 ;
+; in[1]      ; branch      ;       ; 4.463 ; 4.982 ;       ;
+; in[1]      ; jump        ; 4.308 ;       ;       ; 4.911 ;
+; in[1]      ; memRead     ; 5.847 ;       ;       ; 6.649 ;
+; in[1]      ; memWrite    ; 4.962 ;       ;       ; 5.651 ;
+; in[1]      ; memtoReg    ; 5.847 ;       ;       ; 6.649 ;
+; in[1]      ; regDest     ;       ; 4.752 ; 5.285 ;       ;
+; in[1]      ; regWrite    ;       ; 4.318 ; 4.854 ;       ;
+; in[2]      ; aluSrc      ;       ; 3.229 ; 3.511 ;       ;
+; in[2]      ; branch      ; 3.138 ;       ;       ; 3.517 ;
+; in[2]      ; jump        ;       ; 2.937 ; 3.257 ;       ;
+; in[2]      ; memRead     ;       ; 4.583 ; 4.720 ;       ;
+; in[2]      ; memWrite    ;       ; 3.585 ; 3.835 ;       ;
+; in[2]      ; memtoReg    ;       ; 4.583 ; 4.720 ;       ;
+; in[2]      ; regDest     ; 3.270 ;       ;       ; 3.642 ;
+; in[3]      ; aluSrc      ; 4.415 ; 4.461 ; 4.975 ; 5.040 ;
+; in[3]      ; branch      ;       ; 4.654 ; 5.204 ;       ;
+; in[3]      ; jump        ;       ; 4.325 ; 4.887 ;       ;
+; in[3]      ; memRead     ;       ; 5.788 ; 6.163 ;       ;
+; in[3]      ; memWrite    ; 4.746 ;       ;       ; 5.403 ;
+; in[3]      ; memtoReg    ;       ; 5.788 ; 6.163 ;       ;
+; in[3]      ; regDest     ; 4.929 ;       ;       ; 5.546 ;
+; in[3]      ; regWrite    ; 4.498 ;       ;       ; 5.112 ;
+; in[4]      ; aluSrc      ;       ; 4.731 ; 5.208 ;       ;
+; in[4]      ; branch      ;       ; 4.746 ; 5.243 ;       ;
+; in[4]      ; jump        ;       ; 4.513 ; 5.035 ;       ;
+; in[4]      ; memRead     ;       ; 6.085 ; 6.417 ;       ;
+; in[4]      ; memWrite    ;       ; 5.087 ; 5.532 ;       ;
+; in[4]      ; memtoReg    ;       ; 6.085 ; 6.417 ;       ;
+; in[4]      ; regDest     ;       ; 5.183 ; 5.669 ;       ;
+; in[4]      ; regWrite    ;       ; 4.749 ; 5.238 ;       ;
+; in[5]      ; aluSrc      ; 3.292 ;       ;       ; 3.731 ;
+; in[5]      ; branch      ;       ; 3.244 ; 3.545 ;       ;
+; in[5]      ; jump        ;       ; 3.011 ; 3.337 ;       ;
+; in[5]      ; memRead     ; 4.501 ;       ;       ; 5.085 ;
+; in[5]      ; memWrite    ; 3.616 ;       ;       ; 4.087 ;
+; in[5]      ; memtoReg    ; 4.501 ;       ;       ; 5.085 ;
+; in[5]      ; regDest     ;       ; 3.681 ; 3.971 ;       ;
+; in[5]      ; regWrite    ;       ; 3.247 ; 3.540 ;       ;
+; one        ; regDest     ; 4.922 ;       ;       ; 5.477 ;
+; one        ; regWrite    ; 4.513 ;       ;       ; 5.063 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; regDest       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; jump          ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; branch        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; memRead       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; memtoReg      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; aluOp         ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; memWrite      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; aluSrc        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; regWrite      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++-------------------------------------------------------------------+
+; Input Transition Times                                            ;
++----------------+--------------+-----------------+-----------------+
+; Pin            ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++----------------+--------------+-----------------+-----------------+
+; in[2]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in[5]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in[4]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in[3]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in[0]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in[1]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; func[4]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; func[0]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; one            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; func[5]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; func[1]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; func[3]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; func[2]        ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_NCSO~  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++----------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; regDest       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.34 V              ; -0.00668 V          ; 0.218 V                              ; 0.076 V                              ; 1.92e-09 s                  ; 1.81e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.34 V             ; -0.00668 V         ; 0.218 V                             ; 0.076 V                             ; 1.92e-09 s                 ; 1.81e-09 s                 ; No                        ; Yes                       ;
+; jump          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; branch        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; memRead       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; memtoReg      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; aluOp         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.37 V              ; -0.00861 V          ; 0.168 V                              ; 0.038 V                              ; 6.79e-10 s                  ; 6.49e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.37 V             ; -0.00861 V         ; 0.168 V                             ; 0.038 V                             ; 6.79e-10 s                 ; 6.49e-10 s                 ; No                        ; Yes                       ;
+; memWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.16e-09 V                   ; 2.4 V               ; -0.00557 V          ; 0.238 V                              ; 0.014 V                              ; 2.9e-10 s                   ; 3.48e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.16e-09 V                  ; 2.4 V              ; -0.00557 V         ; 0.238 V                             ; 0.014 V                             ; 2.9e-10 s                  ; 3.48e-10 s                 ; No                        ; Yes                       ;
+; aluSrc        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00317 V          ; 0.179 V                              ; 0.007 V                              ; 4.7e-10 s                   ; 4.72e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00317 V         ; 0.179 V                             ; 0.007 V                             ; 4.7e-10 s                  ; 4.72e-10 s                 ; No                        ; Yes                       ;
+; regWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.29e-09 V                   ; 2.39 V              ; -0.00339 V          ; 0.206 V                              ; 0.007 V                              ; 2.77e-10 s                  ; 3.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.29e-09 V                  ; 2.39 V             ; -0.00339 V         ; 0.206 V                             ; 0.007 V                             ; 2.77e-10 s                 ; 3.24e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.76e-09 V                   ; 2.4 V               ; -0.034 V            ; 0.102 V                              ; 0.065 V                              ; 2.49e-10 s                  ; 3.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.76e-09 V                  ; 2.4 V              ; -0.034 V           ; 0.102 V                             ; 0.065 V                             ; 2.49e-10 s                 ; 3.49e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.94e-09 V                   ; 2.39 V              ; -0.0344 V           ; 0.156 V                              ; 0.089 V                              ; 2.68e-10 s                  ; 2.6e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.94e-09 V                  ; 2.39 V             ; -0.0344 V          ; 0.156 V                             ; 0.089 V                             ; 2.68e-10 s                 ; 2.6e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; regDest       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.33 V              ; -0.00286 V          ; 0.193 V                              ; 0.042 V                              ; 2.32e-09 s                  ; 2.21e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.33 V             ; -0.00286 V         ; 0.193 V                             ; 0.042 V                             ; 2.32e-09 s                 ; 2.21e-09 s                 ; Yes                       ; Yes                       ;
+; jump          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; branch        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; memRead       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; memtoReg      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; aluOp         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.35 V              ; -0.00662 V          ; 0.129 V                              ; 0.049 V                              ; 8.55e-10 s                  ; 8.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.35 V             ; -0.00662 V         ; 0.129 V                             ; 0.049 V                             ; 8.55e-10 s                 ; 8.01e-10 s                 ; No                        ; Yes                       ;
+; memWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.13e-07 V                   ; 2.36 V              ; -0.00623 V          ; 0.121 V                              ; 0.03 V                               ; 4.4e-10 s                   ; 4.28e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 8.13e-07 V                  ; 2.36 V             ; -0.00623 V         ; 0.121 V                             ; 0.03 V                              ; 4.4e-10 s                  ; 4.28e-10 s                 ; Yes                       ; Yes                       ;
+; aluSrc        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.36 V              ; -0.00833 V          ; 0.113 V                              ; 0.035 V                              ; 6.32e-10 s                  ; 5.89e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.36 V             ; -0.00833 V         ; 0.113 V                             ; 0.035 V                             ; 6.32e-10 s                 ; 5.89e-10 s                 ; No                        ; Yes                       ;
+; regWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.21e-06 V                   ; 2.37 V              ; -0.00606 V          ; 0.107 V                              ; 0.021 V                              ; 4.26e-10 s                  ; 4.03e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.21e-06 V                  ; 2.37 V             ; -0.00606 V         ; 0.107 V                             ; 0.021 V                             ; 4.26e-10 s                 ; 4.03e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.93e-07 V                   ; 2.37 V              ; -0.0278 V           ; 0.106 V                              ; 0.115 V                              ; 2.69e-10 s                  ; 4.05e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.93e-07 V                  ; 2.37 V             ; -0.0278 V          ; 0.106 V                             ; 0.115 V                             ; 2.69e-10 s                 ; 4.05e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.76e-07 V                   ; 2.36 V              ; -0.00439 V          ; 0.088 V                              ; 0.007 V                              ; 4.05e-10 s                  ; 3.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.76e-07 V                  ; 2.36 V             ; -0.00439 V         ; 0.088 V                             ; 0.007 V                             ; 4.05e-10 s                 ; 3.35e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; regDest       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.65 V              ; -0.0115 V           ; 0.219 V                              ; 0.115 V                              ; 1.64e-09 s                  ; 1.57e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.65 V             ; -0.0115 V          ; 0.219 V                             ; 0.115 V                             ; 1.64e-09 s                 ; 1.57e-09 s                 ; No                        ; Yes                       ;
+; jump          ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; branch        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; memRead       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; memtoReg      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; aluOp         ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.71 V              ; -0.0171 V           ; 0.273 V                              ; 0.065 V                              ; 4.95e-10 s                  ; 5.37e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.71 V             ; -0.0171 V          ; 0.273 V                             ; 0.065 V                             ; 4.95e-10 s                 ; 5.37e-10 s                 ; No                        ; Yes                       ;
+; memWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.16e-08 V                   ; 2.72 V              ; -0.0199 V           ; 0.186 V                              ; 0.027 V                              ; 2.63e-10 s                  ; 2.76e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.16e-08 V                  ; 2.72 V             ; -0.0199 V          ; 0.186 V                             ; 0.027 V                             ; 2.63e-10 s                 ; 2.76e-10 s                 ; Yes                       ; Yes                       ;
+; aluSrc        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.72 V              ; -0.0215 V           ; 0.161 V                              ; 0.061 V                              ; 4.44e-10 s                  ; 4.06e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.72 V             ; -0.0215 V          ; 0.161 V                             ; 0.061 V                             ; 4.44e-10 s                 ; 4.06e-10 s                 ; No                        ; Yes                       ;
+; regWrite      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.66e-08 V                   ; 2.73 V              ; -0.0205 V           ; 0.17 V                               ; 0.027 V                              ; 2.58e-10 s                  ; 2.57e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.66e-08 V                  ; 2.73 V             ; -0.0205 V          ; 0.17 V                              ; 0.027 V                             ; 2.58e-10 s                 ; 2.57e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_NCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.06e-08 V                   ; 2.86 V              ; -0.0341 V           ; 0.364 V                              ; 0.046 V                              ; 1.17e-10 s                  ; 2.6e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.06e-08 V                  ; 2.86 V             ; -0.0341 V          ; 0.364 V                             ; 0.046 V                             ; 1.17e-10 s                 ; 2.6e-10 s                  ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.81e-08 V                   ; 2.72 V              ; -0.0542 V           ; 0.144 V                              ; 0.087 V                              ; 2.55e-10 s                  ; 2.14e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 3.81e-08 V                  ; 2.72 V             ; -0.0542 V          ; 0.144 V                             ; 0.087 V                             ; 2.55e-10 s                 ; 2.14e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 13    ; 13   ;
+; Unconstrained Input Port Paths  ; 60    ; 60   ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 60    ; 60   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed May 19 18:17:05 2021
+Info: Command: quartus_sta controllersingle -c controllersingle
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'controllersingle.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Wed May 19 18:17:13 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:06
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ca5">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ca5|lpm_add_sub0:inst3|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_mji.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ca5|lpm_add_sub1:inst4|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_3oh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ca5|lpm_clshift1:inst5|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_vjc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ca5|lpm_compare1:inst7|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_akg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ca5|lpm_compare2:inst11|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_3kg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ca5|lpm_clshift0:inst1|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ca5|lpm_compare2:inst12|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_3kg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ca5|lpm_mux0:inst2|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_7de.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

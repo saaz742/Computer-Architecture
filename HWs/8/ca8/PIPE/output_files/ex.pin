@@ -1,0 +1,749 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:	2.5V
+ --					Bank 9:	2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --           	    either individually through a 10k Ohm resistor to GND or tie all pins
+ --           	    together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "ex"  ASSIGNED TO AN: EP4CGX50DF27C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+RESERVED_INPUT_WITH_WEAK_PULLUP : A2        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
+aluo[21]                     : A4        : output : 2.5 V             :         : 8         : N              
+jumpAddr[26]                 : A5        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8         :                
+jumpAddr[4]                  : A7        : input  : 2.5 V             :         : 8         : N              
+aluo[27]                     : A8        : output : 2.5 V             :         : 8         : N              
+alu[27]                      : A9        : input  : 2.5 V             :         : 8         : N              
+readdata2[2]                 : A10       : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 8         :                
+alu[13]                      : A12       : input  : 2.5 V             :         : 8         : N              
+readdata2o[31]               : A13       : output : 2.5 V             :         : 8         : N              
+GND+                         : A14       :        :                   :         : 7         :                
+readdata2[29]                : A15       : input  : 2.5 V             :         : 7         : N              
+readdata2o[18]               : A16       : output : 2.5 V             :         : 7         : N              
+readdata2[24]                : A17       : input  : 2.5 V             :         : 7         : N              
+branchaddro2[15]             : A18       : output : 2.5 V             :         : 7         : N              
+branchAddr1[15]              : A19       : input  : 2.5 V             :         : 7         : N              
+aluo[16]                     : A20       : output : 2.5 V             :         : 7         : N              
+aluo[22]                     : A21       : output : 2.5 V             :         : 7         : N              
+branchAddr1[26]              : A22       : input  : 2.5 V             :         : 7         : N              
+readdata2o[22]               : A23       : output : 2.5 V             :         : 7         : N              
+readdata2[14]                : A24       : input  : 2.5 V             :         : 7         : N              
+aluo[6]                      : A25       : output : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+VCCL_GXB                     : AA3       : power  :                   : 1.2V    :           :                
+VCCL_GXB                     : AA4       : power  :                   : 1.2V    :           :                
+nSTATUS                      : AA5       :        :                   :         : 3         :                
+MSEL0                        : AA6       :        :                   :         : 3         :                
+NC                           : AA7       :        :                   :         :           :                
+NC                           : AA8       :        :                   :         :           :                
+NC                           : AA9       :        :                   :         :           :                
+VCCIO3                       : AA10      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AA14      : power  :                   : 2.5V    : 3         :                
+GND                          : AA15      : gnd    :                   :         :           :                
+VCCIO4                       : AA16      : power  :                   : 2.5V    : 4         :                
+GND                          : AA17      : gnd    :                   :         :           :                
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AA19      : power  :                   : 2.5V    : 4         :                
+GND                          : AA20      : gnd    :                   :         :           :                
+aluo[19]                     : AA21      : output : 2.5 V             :         : 4         : N              
+alu[19]                      : AA22      : input  : 2.5 V             :         : 4         : N              
+jumpaddro[5]                 : AA23      : output : 2.5 V             :         : 5         : N              
+readdata2o[11]               : AA24      : output : 2.5 V             :         : 5         : N              
+readdata2[27]                : AA25      : input  : 2.5 V             :         : 5         : N              
+branchaddro2[19]             : AA26      : output : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+NC                           : AB3       :        :                   :         :           :                
+NC                           : AB4       :        :                   :         :           :                
+readdata2[15]                : AB5       : input  : 2.5 V             :         : 3         : N              
+CONF_DONE                    : AB6       :        :                   :         : 3         :                
+jumpaddro[27]                : AB7       : output : 2.5 V             :         : 3         : N              
+NC                           : AB8       :        :                   :         :           :                
+readdata2o[7]                : AB9       : output : 2.5 V             :         : 3         : N              
+GND                          : AB10      : gnd    :                   :         :           :                
+branchAddr1[17]              : AB11      : input  : 2.5 V             :         : 3         : N              
+jumpAddr[22]                 : AB12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AB13      : gnd    :                   :         :           :                
+jumpaddro[10]                : AB14      : output : 2.5 V             :         : 4         : N              
+NC                           : AB15      :        :                   :         :           :                
+GND                          : AB16      : gnd    :                   :         :           :                
+VCCIO4                       : AB17      : power  :                   : 2.5V    : 4         :                
+jumpaddro[9]                 : AB18      : output : 2.5 V             :         : 4         : N              
+GND                          : AB19      : gnd    :                   :         :           :                
+NC                           : AB20      :        :                   :         :           :                
+alu[20]                      : AB21      : input  : 2.5 V             :         : 4         : N              
+GND                          : AB22      : gnd    :                   :         :           :                
+jumpAddr[1]                  : AB23      : input  : 2.5 V             :         : 5         : N              
+readdata2[23]                : AB24      : input  : 2.5 V             :         : 5         : N              
+GND                          : AB25      : gnd    :                   :         :           :                
+aluo[14]                     : AB26      : output : 2.5 V             :         : 5         : N              
+RREF                         : AC1       :        :                   :         :           :                
+GND                          : AC2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AC3       : power  :                   : 2.5V    :           :                
+jumpaddro[16]                : AC4       : output : 2.5 V             :         : 3         : N              
+jumpAddr[16]                 : AC5       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC6       :        :                   :         : 3         :                
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AC7       : output : 2.5 V             :         : 3         : N              
+GND                          : AC8       : gnd    :                   :         :           :                
+jumpAddr[30]                 : AC9       : input  : 2.5 V             :         : 3         : N              
+jumpaddro[21]                : AC10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC11      :        :                   :         : 3         :                
+jumpaddro[22]                : AC12      : output : 2.5 V             :         : 3         : N              
+readdata2[5]                 : AC13      : input  : 2.5 V             :         : 3         : N              
+readdata2[26]                : AC14      : input  : 2.5 V             :         : 4         : N              
+NC                           : AC15      :        :                   :         :           :                
+jumpAddr[10]                 : AC16      : input  : 2.5 V             :         : 4         : N              
+readdata2o[24]               : AC17      : output : 2.5 V             :         : 4         : N              
+branchAddr1[8]               : AC18      : input  : 2.5 V             :         : 4         : N              
+jumpAddr[19]                 : AC19      : input  : 2.5 V             :         : 4         : N              
+readdata2o[28]               : AC20      : output : 2.5 V             :         : 4         : N              
+branchaddro2[9]              : AC21      : output : 2.5 V             :         : 4         : N              
+aluo[0]                      : AC22      : output : 2.5 V             :         : 4         : N              
+jumpAddr[17]                 : AC23      : input  : 2.5 V             :         : 5         : N              
+jumpaddro[1]                 : AC24      : output : 2.5 V             :         : 5         : N              
+rdo[4]                       : AC25      : output : 2.5 V             :         : 5         : N              
+rd[4]                        : AC26      : input  : 2.5 V             :         : 5         : N              
+GND                          : AD1       : gnd    :                   :         :           :                
+VCCL_GXB                     : AD2       : power  :                   : 1.2V    :           :                
+branchAddr1[5]               : AD3       : input  : 2.5 V             :         : 3         : N              
+readdata2o[15]               : AD4       : output : 2.5 V             :         : 3         : N              
+jumpAddr[6]                  : AD5       : input  : 2.5 V             :         : 3         : N              
+readdata2[7]                 : AD6       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD7       :        :                   :         : 3         :                
+branchAddr1[4]               : AD8       : input  : 2.5 V             :         : 3         : N              
+jumpaddro[30]                : AD9       : output : 2.5 V             :         : 3         : N              
+rdo[2]                       : AD10      : output : 2.5 V             :         : 3         : N              
+readdata2o[0]                : AD11      : output : 2.5 V             :         : 3         : N              
+branchAddr1[21]              : AD12      : input  : 2.5 V             :         : 3         : N              
+readdata2o[5]                : AD13      : output : 2.5 V             :         : 3         : N              
+alu[23]                      : AD14      : input  : 2.5 V             :         : 4         : N              
+NC                           : AD15      :        :                   :         :           :                
+branchAddr1[11]              : AD16      : input  : 2.5 V             :         : 4         : N              
+branchAddr1[20]              : AD17      : input  : 2.5 V             :         : 4         : N              
+jumpaddro[19]                : AD18      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD19      :        :                   :         : 4         :                
+jumpAddr[3]                  : AD20      : input  : 2.5 V             :         : 4         : N              
+branchAddr1[9]               : AD21      : input  : 2.5 V             :         : 4         : N              
+readdata2[28]                : AD22      : input  : 2.5 V             :         : 4         : N              
+jumpAddr[24]                 : AD23      : input  : 2.5 V             :         : 4         : N              
+jumpaddro[24]                : AD24      : output : 2.5 V             :         : 4         : N              
+readdata2o[27]               : AD25      : output : 2.5 V             :         : 5         : N              
+aluo[30]                     : AD26      : output : 2.5 V             :         : 5         : N              
+jumpaddro[2]                 : AE1       : output : 2.5 V             :         : 3         : N              
+branchaddro2[4]              : AE2       : output : 2.5 V             :         : 3         : N              
+branchaddro2[5]              : AE3       : output : 2.5 V             :         : 3         : N              
+GND                          : AE4       : gnd    :                   :         :           :                
+readdata2[6]                 : AE5       : input  : 2.5 V             :         : 3         : N              
+branchAddr1[7]               : AE6       : input  : 2.5 V             :         : 3         : N              
+branchaddro2[17]             : AE7       : output : 2.5 V             :         : 3         : N              
+GND                          : AE8       : gnd    :                   :         :           :                
+branchaddro2[21]             : AE9       : output : 2.5 V             :         : 3         : N              
+readdata2o[21]               : AE10      : output : 2.5 V             :         : 3         : N              
+jumpaddro[14]                : AE11      : output : 2.5 V             :         : 3         : N              
+GND                          : AE12      : gnd    :                   :         :           :                
+jumpAddr[14]                 : AE13      : input  : 2.5 V             :         : 3         : N              
+aluo[23]                     : AE14      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE15      :        :                   :         : 4         :                
+GND                          : AE16      : gnd    :                   :         :           :                
+branchaddro2[11]             : AE17      : output : 2.5 V             :         : 4         : N              
+branchaddro2[20]             : AE18      : output : 2.5 V             :         : 4         : N              
+jumpAddr[11]                 : AE19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AE20      : gnd    :                   :         :           :                
+jumpaddro[3]                 : AE21      : output : 2.5 V             :         : 4         : N              
+aluo[8]                      : AE22      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4         :                
+GND                          : AE24      : gnd    :                   :         :           :                
+aluo[2]                      : AE25      : output : 2.5 V             :         : 5         : N              
+jumpaddro[17]                : AE26      : output : 2.5 V             :         : 5         : N              
+jumpAddr[2]                  : AF2       : input  : 2.5 V             :         : 3         : N              
+aluo[25]                     : AF3       : output : 2.5 V             :         : 3         : N              
+readdata2o[6]                : AF4       : output : 2.5 V             :         : 3         : N              
+branchaddro2[7]              : AF5       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF6       :        :                   :         : 3         :                
+rd[2]                        : AF7       : input  : 2.5 V             :         : 3         : N              
+jumpaddro[4]                 : AF8       : output : 2.5 V             :         : 3         : N              
+readdata2[21]                : AF9       : input  : 2.5 V             :         : 3         : N              
+aluo[18]                     : AF10      : output : 2.5 V             :         : 3         : N              
+alu[18]                      : AF11      : input  : 2.5 V             :         : 3         : N              
+readdata2[31]                : AF12      : input  : 2.5 V             :         : 3         : N              
+GND+                         : AF13      :        :                   :         : 4         :                
+GND+                         : AF14      :        :                   :         : 4         :                
+rdo[1]                       : AF15      : output : 2.5 V             :         : 4         : N              
+rd[1]                        : AF16      : input  : 2.5 V             :         : 4         : N              
+readdata2[19]                : AF17      : input  : 2.5 V             :         : 4         : N              
+readdata2o[19]               : AF18      : output : 2.5 V             :         : 4         : N              
+jumpAddr[9]                  : AF19      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF20      :        :                   :         : 4         :                
+branchaddro2[26]             : AF21      : output : 2.5 V             :         : 4         : N              
+alu[8]                       : AF22      : input  : 2.5 V             :         : 4         : N              
+branchAddr1[25]              : AF23      : input  : 2.5 V             :         : 4         : N              
+branchaddro2[25]             : AF24      : output : 2.5 V             :         : 4         : N              
+aluo[31]                     : AF25      : output : 2.5 V             :         : 4         : N              
+jumpaddro[18]                : B1        : output : 2.5 V             :         : 8         : N              
+branchAddr1[13]              : B2        : input  : 2.5 V             :         : 8         : N              
+GND                          : B3        : gnd    :                   :         :           :                
+alu[21]                      : B4        : input  : 2.5 V             :         : 8         : N              
+branchaddro2[30]             : B5        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B6        :        :                   :         : 8         :                
+readdata2[0]                 : B7        : input  : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+jumpAddr[31]                 : B9        : input  : 2.5 V             :         : 8         : N              
+readdata2o[2]                : B10       : output : 2.5 V             :         : 8         : N              
+jumpAddr[7]                  : B11       : input  : 2.5 V             :         : 8         : N              
+GND                          : B12       : gnd    :                   :         :           :                
+aluo[13]                     : B13       : output : 2.5 V             :         : 8         : N              
+GND+                         : B14       :        :                   :         : 7         :                
+branchAddr1[2]               : B15       : input  : 2.5 V             :         : 7         : N              
+GND                          : B16       : gnd    :                   :         :           :                
+alu[15]                      : B17       : input  : 2.5 V             :         : 7         : N              
+aluo[1]                      : B18       : output : 2.5 V             :         : 7         : N              
+branchAddr1[23]              : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+alu[22]                      : B21       : input  : 2.5 V             :         : 7         : N              
+aluo[17]                     : B22       : output : 2.5 V             :         : 7         : N              
+readdata2o[14]               : B23       : output : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+readdata2o[25]               : B25       : output : 2.5 V             :         : 6         : N              
+readdata2[25]                : B26       : input  : 2.5 V             :         : 6         : N              
+alu[25]                      : C1        : input  : 2.5 V             :         : 8         : N              
+rdo[0]                       : C2        : output : 2.5 V             :         : 8         : N              
+branchaddro2[13]             : C3        : output : 2.5 V             :         : 8         : N              
+jumpAddr[18]                 : C4        : input  : 2.5 V             :         : 8         : N              
+jumpaddro[31]                : C5        : output : 2.5 V             :         : 8         : N              
+branchAddr1[6]               : C6        : input  : 2.5 V             :         : 8         : N              
+branchaddro2[6]              : C7        : output : 2.5 V             :         : 8         : N              
+readdata2[17]                : C8        : input  : 2.5 V             :         : 8         : N              
+jumpAddr[0]                  : C9        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C10       :        :                   :         : 8         :                
+jumpaddro[26]                : C11       : output : 2.5 V             :         : 8         : N              
+jumpAddr[21]                 : C12       : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C13       :        :                   :         : 8         :                
+readdata2o[26]               : C14       : output : 2.5 V             :         : 7         : N              
+branchaddro2[2]              : C15       : output : 2.5 V             :         : 7         : N              
+aluo[15]                     : C16       : output : 2.5 V             :         : 7         : N              
+branchaddro2[8]              : C17       : output : 2.5 V             :         : 7         : N              
+aluo[5]                      : C18       : output : 2.5 V             :         : 7         : N              
+branchaddro2[23]             : C19       : output : 2.5 V             :         : 7         : N              
+branchaddro2[12]             : C20       : output : 2.5 V             :         : 7         : N              
+branchAddr1[12]              : C21       : input  : 2.5 V             :         : 7         : N              
+alu[24]                      : C22       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C23       :        :                   :         : 7         :                
+branchAddr1[3]               : C24       : input  : 2.5 V             :         : 6         : N              
+readdata2o[9]                : C25       : output : 2.5 V             :         : 6         : N              
+branchAddr1[18]              : C26       : input  : 2.5 V             :         : 6         : N              
+jumpAddr[27]                 : D1        : input  : 2.5 V             :         : 8         : N              
+readdata2o[17]               : D2        : output : 2.5 V             :         : 8         : N              
+jumpaddro[6]                 : D3        : output : 2.5 V             :         : 8         : N              
+aluo[12]                     : D4        : output : 2.5 V             :         : 8         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D5        : input  : 2.5 V             :         : 9         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D6        : input  : 2.5 V             :         : 9         : N              
+readdata2[10]                : D7        : input  : 2.5 V             :         : 8         : N              
+GND                          : D8        : gnd    :                   :         :           :                
+jumpAddr[8]                  : D9        : input  : 2.5 V             :         : 8         : N              
+jumpaddro[8]                 : D10       : output : 2.5 V             :         : 8         : N              
+branchAddr1[30]              : D11       : input  : 2.5 V             :         : 8         : N              
+NC                           : D12       :        :                   :         :           :                
+NC                           : D13       :        :                   :         :           :                
+jumpaddro[7]                 : D14       : output : 2.5 V             :         : 8         : N              
+readdata2[16]                : D15       : input  : 2.5 V             :         : 7         : N              
+readdata2o[29]               : D16       : output : 2.5 V             :         : 7         : N              
+readdata2[18]                : D17       : input  : 2.5 V             :         : 7         : N              
+alu[5]                       : D18       : input  : 2.5 V             :         : 7         : N              
+alu[16]                      : D19       : input  : 2.5 V             :         : 7         : N              
+alu[6]                       : D20       : input  : 2.5 V             :         : 7         : N              
+alu[17]                      : D21       : input  : 2.5 V             :         : 7         : N              
+readdata2[22]                : D22       : input  : 2.5 V             :         : 7         : N              
+jumpAddr[25]                 : D23       : input  : 2.5 V             :         : 7         : N              
+branchaddro2[3]              : D24       : output : 2.5 V             :         : 6         : N              
+jumpaddro[12]                : D25       : output : 2.5 V             :         : 6         : N              
+jumpaddro[13]                : D26       : output : 2.5 V             :         : 6         : N              
+jumpaddro[0]                 : E1        : output : 2.5 V             :         : 8         : N              
+alu[12]                      : E2        : input  : 2.5 V             :         : 8         : N              
+GND                          : E3        : gnd    :                   :         :           :                
+GND                          : E4        : gnd    :                   :         :           :                
+nCONFIG                      : E5        :        :                   :         : 9         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E6        : input  : 2.5 V             :         : 9         : N              
+readdata2o[10]               : E7        : output : 2.5 V             :         : 8         : N              
+GND                          : E8        : gnd    :                   :         :           :                
+rd[0]                        : E9        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E10       : power  :                   : 2.5V    : 8         :                
+NC                           : E11       :        :                   :         :           :                
+NC                           : E12       :        :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+GND                          : E14       : gnd    :                   :         :           :                
+readdata2o[16]               : E15       : output : 2.5 V             :         : 7         : N              
+alu[1]                       : E16       : input  : 2.5 V             :         : 7         : N              
+jumpaddro[11]                : E17       : output : 2.5 V             :         : 7         : N              
+GND                          : E18       : gnd    :                   :         :           :                
+NC                           : E19       :        :                   :         :           :                
+aluo[24]                     : E20       : output : 2.5 V             :         : 7         : N              
+jumpaddro[25]                : E21       : output : 2.5 V             :         : 7         : N              
+rd[3]                        : E22       : input  : 2.5 V             :         : 7         : N              
+readdata2[9]                 : E23       : input  : 2.5 V             :         : 7         : N              
+aluo[3]                      : E24       : output : 2.5 V             :         : 6         : N              
+branchaddro2[10]             : E25       : output : 2.5 V             :         : 6         : N              
+aluo[29]                     : E26       : output : 2.5 V             :         : 6         : N              
+GND                          : F1        : gnd    :                   :         :           :                
+GND                          : F2        : gnd    :                   :         :           :                
+GXB_NC                       : F3        :        :                   :         : QL1       :                
+GXB_NC                       : F4        :        :                   :         : QL1       :                
+TMS                          : F5        : input  :                   :         : 9         :                
+~ALTERA_DCLK~                : F6        : output : 2.5 V             :         : 9         : N              
+GND                          : F7        : gnd    :                   :         :           :                
+VCCINT                       : F8        : power  :                   : 1.2V    :           :                
+VCCIO8                       : F9        : power  :                   : 2.5V    : 8         :                
+GND                          : F10       : gnd    :                   :         :           :                
+VCCIO8                       : F11       : power  :                   : 2.5V    : 8         :                
+GND                          : F12       : gnd    :                   :         :           :                
+VCCIO8                       : F13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : F14       : power  :                   : 2.5V    : 8         :                
+NC                           : F15       :        :                   :         :           :                
+VCCIO7                       : F16       : power  :                   : 2.5V    : 7         :                
+GND                          : F17       : gnd    :                   :         :           :                
+VCCIO7                       : F18       : power  :                   : 2.5V    : 7         :                
+GND                          : F19       : gnd    :                   :         :           :                
+VCCIO7                       : F20       : power  :                   : 2.5V    : 7         :                
+branchaddro2[18]             : F21       : output : 2.5 V             :         : 6         : N              
+GND                          : F22       : gnd    :                   :         :           :                
+aluo[26]                     : F23       : output : 2.5 V             :         : 6         : N              
+readdata2o[13]               : F24       : output : 2.5 V             :         : 6         : N              
+GND                          : F25       : gnd    :                   :         :           :                
+branchAddr1[29]              : F26       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : G1        :        :                   :         : QL1       :                
+GXB_GND*                     : G2        :        :                   :         : QL1       :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+VCCL_GXB                     : G5        : power  :                   : 1.2V    :           :                
+TDI                          : G6        : input  :                   :         : 9         :                
+VCCIO9                       : G7        : power  :                   : 2.5V    : 9         :                
+TCK                          : G8        : input  :                   :         : 9         :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+VCCINT                       : G11       : power  :                   : 1.2V    :           :                
+VCCIO8                       : G12       : power  :                   : 2.5V    : 8         :                
+GND                          : G13       : gnd    :                   :         :           :                
+GND                          : G14       : gnd    :                   :         :           :                
+VCCINT                       : G15       : power  :                   : 1.2V    :           :                
+VCCIO7                       : G16       : power  :                   : 2.5V    : 7         :                
+VCCINT                       : G17       : power  :                   : 1.2V    :           :                
+VCCIO7                       : G18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+GND                          : G20       : gnd    :                   :         :           :                
+VCCD_PLL                     : G21       : power  :                   : 1.2V    :           :                
+rdo[3]                       : G22       : output : 2.5 V             :         : 6         : N              
+alu[3]                       : G23       : input  : 2.5 V             :         : 6         : N              
+readdata2[13]                : G24       : input  : 2.5 V             :         : 6         : N              
+aluo[9]                      : G25       : output : 2.5 V             :         : 6         : N              
+branchAddr1[10]              : G26       : input  : 2.5 V             :         : 6         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+VCCL_GXB                     : H5        : power  :                   : 1.2V    :           :                
+VCCA                         : H6        : power  :                   : 2.5V    :           :                
+nCE                          : H7        :        :                   :         : 9         :                
+TDO                          : H8        : output :                   :         : 9         :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+GND                          : H11       : gnd    :                   :         :           :                
+VCCINT                       : H12       : power  :                   : 1.2V    :           :                
+GND                          : H13       : gnd    :                   :         :           :                
+VCCINT                       : H14       : power  :                   : 1.2V    :           :                
+GND                          : H15       : gnd    :                   :         :           :                
+VCCINT                       : H16       : power  :                   : 1.2V    :           :                
+GND                          : H17       : gnd    :                   :         :           :                
+VCCINT                       : H18       : power  :                   : 1.2V    :           :                
+GND                          : H19       : gnd    :                   :         :           :                
+VCCA                         : H20       : power  :                   : 2.5V    :           :                
+VCCIO6                       : H21       : power  :                   : 2.5V    : 6         :                
+alu[26]                      : H22       : input  : 2.5 V             :         : 6         : N              
+jumpAddr[13]                 : H23       : input  : 2.5 V             :         : 6         : N              
+alu[9]                       : H24       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H25       :        :                   :         : 6         :                
+branchAddr1[27]              : H26       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+VCCH_GXB                     : J5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+VCC_CLKIN8B                  : J9        : power  :                   : 2.5V    : 8B        :                
+VCCINT                       : J10       : power  :                   : 1.2V    :           :                
+VCCINT                       : J11       : power  :                   : 1.2V    :           :                
+GND                          : J12       : gnd    :                   :         :           :                
+VCCINT                       : J13       : power  :                   : 1.2V    :           :                
+GND                          : J14       : gnd    :                   :         :           :                
+VCCINT                       : J15       : power  :                   : 1.2V    :           :                
+GND                          : J16       : gnd    :                   :         :           :                
+VCCINT                       : J17       : power  :                   : 1.2V    :           :                
+GND                          : J18       : gnd    :                   :         :           :                
+VCCINT                       : J19       : power  :                   : 1.2V    :           :                
+GND                          : J20       : gnd    :                   :         :           :                
+VCCIO6                       : J21       : power  :                   : 2.5V    : 6         :                
+GND                          : J22       : gnd    :                   :         :           :                
+jumpAddr[12]                 : J23       : input  : 2.5 V             :         : 6         : N              
+branchaddro2[29]             : J24       : output : 2.5 V             :         : 6         : N              
+readdata2o[4]                : J25       : output : 2.5 V             :         : 6         : N              
+branchAddr1[31]              : J26       : input  : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCA_GXB                     : K5        : power  :                   : 2.5V    :           :                
+GND                          : K6        : gnd    :                   :         :           :                
+VCCA                         : K7        : power  :                   : 2.5V    :           :                
+VCCINT                       : K8        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : K9        :        :                   :         : 8B        :                
+GXB_GND*                     : K10       :        :                   :         : 8B        :                
+GND                          : K11       : gnd    :                   :         :           :                
+VCCINT                       : K12       : power  :                   : 1.2V    :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCC_CLKIN8A                  : K14       : power  :                   : 2.5V    : 8A        :                
+GND                          : K15       : gnd    :                   :         :           :                
+VCCINT                       : K16       : power  :                   : 1.2V    :           :                
+GND                          : K17       : gnd    :                   :         :           :                
+VCCINT                       : K18       : power  :                   : 1.2V    :           :                
+GND                          : K19       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K20       :        :                   :         : 6         :                
+jumpaddro[15]                : K21       : output : 2.5 V             :         : 6         : N              
+jumpAddr[15]                 : K22       : input  : 2.5 V             :         : 6         : N              
+alu[29]                      : K23       : input  : 2.5 V             :         : 6         : N              
+readdata2[4]                 : K24       : input  : 2.5 V             :         : 6         : N              
+GND                          : K25       : gnd    :                   :         :           :                
+branchaddro2[27]             : K26       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+VCCL_GXB                     : L5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : L6        : power  :                   : 1.2V    :           :                
+VCCINT                       : L7        : power  :                   : 1.2V    :           :                
+GND                          : L8        : gnd    :                   :         :           :                
+GXB_GND*                     : L9        :        :                   :         : 8B        :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+VCCINT                       : L11       : power  :                   : 1.2V    :           :                
+GND                          : L12       : gnd    :                   :         :           :                
+VCCINT                       : L13       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : L14       :        :                   :         : 8A        :                
+GXB_GND*                     : L15       :        :                   :         : 8A        :                
+GND                          : L16       : gnd    :                   :         :           :                
+VCCINT                       : L17       : power  :                   : 1.2V    :           :                
+GND                          : L18       : gnd    :                   :         :           :                
+readdata2[3]                 : L19       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : L20       : power  :                   : 2.5V    : 6         :                
+branchaddro2[31]             : L21       : output : 2.5 V             :         : 6         : N              
+alu[0]                       : L22       : input  : 2.5 V             :         : 6         : N              
+readdata2o[1]                : L23       : output : 2.5 V             :         : 6         : N              
+readdata2[1]                 : L24       : input  : 2.5 V             :         : 6         : N              
+branchaddro2[0]              : L25       : output : 2.5 V             :         : 6         : N              
+branchAddr1[0]               : L26       : input  : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCH_GXB                     : M5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M6        : power  :                   : 1.2V    :           :                
+GND                          : M7        : gnd    :                   :         :           :                
+VCCINT                       : M8        : power  :                   : 1.2V    :           :                
+GND                          : M9        : gnd    :                   :         :           :                
+VCCINT                       : M10       : power  :                   : 1.2V    :           :                
+GND                          : M11       : gnd    :                   :         :           :                
+VCCINT                       : M12       : power  :                   : 1.2V    :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCINT                       : M14       : power  :                   : 1.2V    :           :                
+GND                          : M15       : gnd    :                   :         :           :                
+VCCINT                       : M16       : power  :                   : 1.2V    :           :                
+GND                          : M17       : gnd    :                   :         :           :                
+VCCINT                       : M18       : power  :                   : 1.2V    :           :                
+branchaddro2[1]              : M19       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : M20       : power  :                   : 2.5V    : 6         :                
+GND                          : M21       : gnd    :                   :         :           :                
+readdata2o[20]               : M22       : output : 2.5 V             :         : 6         : N              
+jumpaddro[28]                : M23       : output : 2.5 V             :         : 6         : N              
+alu[11]                      : M24       : input  : 2.5 V             :         : 6         : N              
+readdata2[20]                : M25       : input  : 2.5 V             :         : 6         : N              
+branchAddr1[1]               : M26       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCA_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCA                         : N7        : power  :                   : 2.5V    :           :                
+GND                          : N8        : gnd    :                   :         :           :                
+VCCINT                       : N9        : power  :                   : 1.2V    :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+VCCINT                       : N11       : power  :                   : 1.2V    :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+VCCINT                       : N13       : power  :                   : 1.2V    :           :                
+GND                          : N14       : gnd    :                   :         :           :                
+VCCINT                       : N15       : power  :                   : 1.2V    :           :                
+GND                          : N16       : gnd    :                   :         :           :                
+VCCINT                       : N17       : power  :                   : 1.2V    :           :                
+GND                          : N18       : gnd    :                   :         :           :                
+alu[10]                      : N19       : input  : 2.5 V             :         : 6         : N              
+aluo[10]                     : N20       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : N21       : power  :                   : 2.5V    : 6         :                
+jumpAddr[28]                 : N22       : input  : 2.5 V             :         : 6         : N              
+aluzeroo                     : N23       : output : 2.5 V             :         : 6         : N              
+aluo[11]                     : N24       : output : 2.5 V             :         : 6         : N              
+alu[31]                      : N25       : input  : 2.5 V             :         : 6         : N              
+aluzero                      : N26       : input  : 2.5 V             :         : 6         : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL0       :                
+GXB_NC                       : P4        :        :                   :         : QL0       :                
+VCCL_GXB                     : P5        : power  :                   : 1.2V    :           :                
+GND                          : P6        : gnd    :                   :         :           :                
+VCCA                         : P7        : power  :                   : 2.5V    :           :                
+VCCINT                       : P8        : power  :                   : 1.2V    :           :                
+GND                          : P9        : gnd    :                   :         :           :                
+VCCINT                       : P10       : power  :                   : 1.2V    :           :                
+GND                          : P11       : gnd    :                   :         :           :                
+VCCINT                       : P12       : power  :                   : 1.2V    :           :                
+GND                          : P13       : gnd    :                   :         :           :                
+VCCINT                       : P14       : power  :                   : 1.2V    :           :                
+GND                          : P15       : gnd    :                   :         :           :                
+VCCINT                       : P16       : power  :                   : 1.2V    :           :                
+GND                          : P17       : gnd    :                   :         :           :                
+VCCINT                       : P18       : power  :                   : 1.2V    :           :                
+aluo[28]                     : P19       : output : 2.5 V             :         : 5         : N              
+alu[28]                      : P20       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : P21       : power  :                   : 2.5V    : 5         :                
+GND                          : P22       : gnd    :                   :         :           :                
+readdata2[12]                : P23       : input  : 2.5 V             :         : 5         : N              
+readdata2o[12]               : P24       : output : 2.5 V             :         : 5         : N              
+GND                          : P25       : gnd    :                   :         :           :                
+GND+                         : P26       :        :                   :         : 5         :                
+GXB_GND*                     : R1        :        :                   :         : QL0       :                
+GXB_GND*                     : R2        :        :                   :         : QL0       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+VCCH_GXB                     : R5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : R6        : power  :                   : 1.2V    :           :                
+VCCINT                       : R7        : power  :                   : 1.2V    :           :                
+GND                          : R8        : gnd    :                   :         :           :                
+VCCINT                       : R9        : power  :                   : 1.2V    :           :                
+GND                          : R10       : gnd    :                   :         :           :                
+VCCINT                       : R11       : power  :                   : 1.2V    :           :                
+GND                          : R12       : gnd    :                   :         :           :                
+VCCINT                       : R13       : power  :                   : 1.2V    :           :                
+GND                          : R14       : gnd    :                   :         :           :                
+VCCINT                       : R15       : power  :                   : 1.2V    :           :                
+GND                          : R16       : gnd    :                   :         :           :                
+VCCINT                       : R17       : power  :                   : 1.2V    :           :                
+GND                          : R18       : gnd    :                   :         :           :                
+jumpaddro[20]                : R19       : output : 2.5 V             :         : 5         : N              
+readdata2[8]                 : R20       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : R21       : power  :                   : 2.5V    : 5         :                
+readdata2o[3]                : R22       : output : 2.5 V             :         : 5         : N              
+aluo[7]                      : R23       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R24       :        :                   :         : 5         :                
+alu[7]                       : R25       : input  : 2.5 V             :         : 5         : N              
+GND+                         : R26       :        :                   :         : 5         :                
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+VCCA_GXB                     : T5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCINT                       : T8        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : T9        :        :                   :         : 3B        :                
+GXB_GND*                     : T10       :        :                   :         : 3B        :                
+GND                          : T11       : gnd    :                   :         :           :                
+VCCINT                       : T12       : power  :                   : 1.2V    :           :                
+GND                          : T13       : gnd    :                   :         :           :                
+GXB_GND*                     : T14       :        :                   :         : 3A        :                
+clk                          : T15       : input  : 2.5 V             :         : 3A        : N              
+VCCINT                       : T16       : power  :                   : 1.2V    :           :                
+GND                          : T17       : gnd    :                   :         :           :                
+VCCINT                       : T18       : power  :                   : 1.2V    :           :                
+branchaddro2[28]             : T19       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : T20       : power  :                   : 2.5V    : 5         :                
+alu[14]                      : T21       : input  : 2.5 V             :         : 5         : N              
+branchAddr1[24]              : T22       : input  : 2.5 V             :         : 5         : N              
+jumpAddr[29]                 : T23       : input  : 2.5 V             :         : 5         : N              
+readdata2o[8]                : T24       : output : 2.5 V             :         : 5         : N              
+jumpaddro[23]                : T25       : output : 2.5 V             :         : 5         : N              
+jumpAddr[20]                 : T26       : input  : 2.5 V             :         : 5         : N              
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+VCCL_GXB                     : U5        : power  :                   : 1.2V    :           :                
+GND                          : U6        : gnd    :                   :         :           :                
+VCCA                         : U7        : power  :                   : 2.5V    :           :                
+GND                          : U8        : gnd    :                   :         :           :                
+GXB_GND*                     : U9        :        :                   :         : 3B        :                
+GXB_GND*                     : U10       :        :                   :         : 3B        :                
+VCCINT                       : U11       : power  :                   : 1.2V    :           :                
+GND                          : U12       : gnd    :                   :         :           :                
+VCCINT                       : U13       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3A                  : U14       : power  :                   : 2.5V    : 3A        :                
+VCCINT                       : U15       : power  :                   : 1.2V    :           :                
+GND                          : U16       : gnd    :                   :         :           :                
+VCCINT                       : U17       : power  :                   : 1.2V    :           :                
+GND                          : U18       : gnd    :                   :         :           :                
+branchAddr1[28]              : U19       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : U20       : power  :                   : 2.5V    : 5         :                
+GND                          : U21       : gnd    :                   :         :           :                
+branchAddr1[16]              : U22       : input  : 2.5 V             :         : 5         : N              
+alu[30]                      : U23       : input  : 2.5 V             :         : 5         : N              
+branchAddr1[14]              : U24       : input  : 2.5 V             :         : 5         : N              
+jumpAddr[23]                 : U25       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U26       :        :                   :         : 5         :                
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCH_GXB                     : V5        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : V6        : power  :                   : 1.2V    :           :                
+GND                          : V7        : gnd    :                   :         :           :                
+VCCINT                       : V8        : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : V9        : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : V10       : power  :                   : 1.2V    :           :                
+GND                          : V11       : gnd    :                   :         :           :                
+VCCINT                       : V12       : power  :                   : 1.2V    :           :                
+GND                          : V13       : gnd    :                   :         :           :                
+VCCINT                       : V14       : power  :                   : 1.2V    :           :                
+GND                          : V15       : gnd    :                   :         :           :                
+VCCINT                       : V16       : power  :                   : 1.2V    :           :                
+GND                          : V17       : gnd    :                   :         :           :                
+VCCINT                       : V18       : power  :                   : 1.2V    :           :                
+GND                          : V19       : gnd    :                   :         :           :                
+VCCIO5                       : V20       : power  :                   : 2.5V    : 5         :                
+readdata2[30]                : V21       : input  : 2.5 V             :         : 5         : N              
+branchAddr1[22]              : V22       : input  : 2.5 V             :         : 5         : N              
+alu[2]                       : V23       : input  : 2.5 V             :         : 5         : N              
+branchaddro2[22]             : V24       : output : 2.5 V             :         : 5         : N              
+GND                          : V25       : gnd    :                   :         :           :                
+branchaddro2[14]             : V26       : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+VCCA_GXB                     : W5        : power  :                   : 2.5V    :           :                
+VCCA                         : W6        : power  :                   : 2.5V    :           :                
+MSEL3                        : W7        :        :                   :         : 3         :                
+VCCIO3                       : W8        : power  :                   : 2.5V    : 3         :                
+VCCINT                       : W9        : power  :                   : 1.2V    :           :                
+GND                          : W10       : gnd    :                   :         :           :                
+VCCINT                       : W11       : power  :                   : 1.2V    :           :                
+GND                          : W12       : gnd    :                   :         :           :                
+VCCINT                       : W13       : power  :                   : 1.2V    :           :                
+GND                          : W14       : gnd    :                   :         :           :                
+VCCINT                       : W15       : power  :                   : 1.2V    :           :                
+GND                          : W16       : gnd    :                   :         :           :                
+VCCINT                       : W17       : power  :                   : 1.2V    :           :                
+GND                          : W18       : gnd    :                   :         :           :                
+VCCINT                       : W19       : power  :                   : 1.2V    :           :                
+GND                          : W20       : gnd    :                   :         :           :                
+VCCA                         : W21       : power  :                   : 2.5V    :           :                
+readdata2o[30]               : W22       : output : 2.5 V             :         : 5         : N              
+readdata2o[23]               : W23       : output : 2.5 V             :         : 5         : N              
+alu[4]                       : W24       : input  : 2.5 V             :         : 5         : N              
+aluo[4]                      : W25       : output : 2.5 V             :         : 5         : N              
+jumpaddro[29]                : W26       : output : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+MSEL2                        : Y6        :        :                   :         : 3         :                
+MSEL1                        : Y7        :        :                   :         : 3         :                
+GND                          : Y8        : gnd    :                   :         :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+VCCINT                       : Y10       : power  :                   : 1.2V    :           :                
+GND                          : Y11       : gnd    :                   :         :           :                
+VCCINT                       : Y12       : power  :                   : 1.2V    :           :                
+GND                          : Y13       : gnd    :                   :         :           :                
+VCCINT                       : Y14       : power  :                   : 1.2V    :           :                
+VCCIO4                       : Y15       : power  :                   : 2.5V    : 4         :                
+GND                          : Y16       : gnd    :                   :         :           :                
+GND                          : Y17       : gnd    :                   :         :           :                
+GND                          : Y18       : gnd    :                   :         :           :                
+VCCIO4                       : Y19       : power  :                   : 2.5V    : 4         :                
+VCCD_PLL                     : Y20       : power  :                   : 1.2V    :           :                
+aluo[20]                     : Y21       : output : 2.5 V             :         : 4         : N              
+readdata2[11]                : Y22       : input  : 2.5 V             :         : 5         : N              
+jumpAddr[5]                  : Y23       : input  : 2.5 V             :         : 5         : N              
+branchAddr1[19]              : Y24       : input  : 2.5 V             :         : 5         : N              
+branchaddro2[16]             : Y25       : output : 2.5 V             :         : 5         : N              
+branchaddro2[24]             : Y26       : output : 2.5 V             :         : 5         : N              

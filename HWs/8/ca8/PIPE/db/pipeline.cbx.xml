@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="pipeline">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|lpm_mux8:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_2de.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_mux4:inst5|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_dbe.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_mux9:inst8|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_gue.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ca5:inst9|lpm_clshift1:inst5|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ca5:inst9|lpm_compare1:inst7|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_akg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_add_sub0:inst68|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_mji.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_add_sub0:inst77|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_mji.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_clshift1:inst4|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_mux1:inst41|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_3de.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_mux3:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_nbe.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_mux9:inst10|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_gue.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ca5:inst9|lpm_compare2:inst12|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_3kg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|controllersingle:inst15|lpm_decode0:inst345|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_tgf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|lpm_clshift0:inst14|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_clshift0:inst6|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|CA6:inst6|lpm_mux9:inst2|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_gue.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ca5:inst9|lpm_add_sub1:inst4|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_3oh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|lpm_add_sub0:inst3|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_mji.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ca5:inst9|lpm_clshift0:inst1|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_ukb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ca5:inst9|lpm_mux0:inst2|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_7de.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|lpm_add_sub0:inst8|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_mji.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ca5:inst9|lpm_add_sub0:inst3|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_mji.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|ca5:inst9|lpm_compare2:inst11|lpm_compare:LPM_COMPARE_component" CBX_FILE_NAME="cmpr_3kg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|controllersingle:inst15|lpm_decode1:inst2341|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_tgf.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,5 @@
+verilog work "fp_multiplier.v"
+verilog work "fp_min.v"
+verilog work "fp_divider.v"
+verilog work "fp_adder.v"
+verilog work "FPALU.v"

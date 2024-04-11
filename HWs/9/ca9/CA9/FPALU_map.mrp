@@ -1,0 +1,315 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'FPALU'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3sd3400a-fg676-4 -cm area -ir off -pr
+off -c 100 -o FPALU_map.ncd FPALU.ngd FPALU.pcf 
+Target Device  : xc3sd3400a
+Target Package : fg676
+Target Speed   : -4
+Mapper Version : spartan3adsp -- $Revision: 1.55 $
+Mapped Date    : Mon Jun 21 20:12:28 2021
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   21
+Logic Utilization:
+  Number of 4 input LUTs:               741 out of  47,744    1%
+Logic Distribution:
+  Number of occupied Slices:            393 out of  23,872    1%
+    Number of Slices containing only related logic:     393 out of     393 100%
+    Number of Slices containing unrelated logic:          0 out of     393   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         781 out of  47,744    1%
+    Number used as logic:               741
+    Number used as a route-thru:         40
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 99 out of     469   21%
+    IOB Latches:                         32
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of DSP48As:                      4 out of     126    3%
+
+Average Fanout of Non-Clock Nets:                3.29
+
+Peak Memory Usage:  4543 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:266 - The function generator fpadd/Ashifted<0>10 failed to merge
+   with F5 multiplexer fpadd/Ashifted<4>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpadd/Ashifted<13>3 failed to merge
+   with F5 multiplexer fpadd/Ashifted<5>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Bshifted<10>3 failed to merge
+   with F5 multiplexer fpmin/Bshifted<10>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Bshifted<0>5 failed to merge
+   with F5 multiplexer fpmin/Bshifted<12>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Bshifted<11>8 failed to merge
+   with F5 multiplexer fpmin/Bshifted<11>71_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Bshifted<13>6 failed to merge
+   with F5 multiplexer fpmin/Bshifted<13>51_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpadd/Ashifted<10>3 failed to merge
+   with F5 multiplexer fpadd/Ashifted<10>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpadd/Ashifted<11>8 failed to merge
+   with F5 multiplexer fpadd/Ashifted<11>71_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpadd/Ashifted<13>6 failed to merge
+   with F5 multiplexer fpadd/Ashifted<13>51_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Ashifted<10>11 failed to merge
+   with F5 multiplexer fpmin/Ashifted<10>102_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Ashifted<10>3 failed to merge
+   with F5 multiplexer fpmin/Ashifted<10>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Ashifted<0>525 failed to merge
+   with F5 multiplexer fpmin/Ashifted<12>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Ashifted<11>8 failed to merge
+   with F5 multiplexer fpmin/Ashifted<11>71_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Ashifted<13>6 failed to merge
+   with F5 multiplexer fpmin/Ashifted<13>51_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpadd/Ashifted<10>11 failed to merge
+   with F5 multiplexer fpadd/Ashifted<10>102_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Ashifted<0>10 failed to merge
+   with F5 multiplexer fpmin/Ashifted<4>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpmin/Ashifted<13>3 failed to merge
+   with F5 multiplexer fpmin/Ashifted<5>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpadd/Bshifted<10>3 failed to merge
+   with F5 multiplexer fpadd/Bshifted<10>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpadd/Bshifted<0>5 failed to merge
+   with F5 multiplexer fpadd/Bshifted<12>21_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpadd/Bshifted<11>8 failed to merge
+   with F5 multiplexer fpadd/Bshifted<11>71_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator fpadd/Bshifted<13>6 failed to merge
+   with F5 multiplexer fpadd/Bshifted<13>51_f5.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network fp_clk has no load.
+INFO:LIT:395 - The above info message is repeated 1 more times for the following
+   (max. 5 shown):
+   int_clk
+   To see the details of these info messages, please use the -detail switch.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+Section 6 - IOB Properties
+--------------------------
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |             | Strength | Rate    |              |          | Delay    |                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| a<0>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<1>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<2>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<3>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<4>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<5>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<6>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<7>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<8>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<9>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<10>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<11>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<12>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<13>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<14>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<15>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<16>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<17>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<18>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<19>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<20>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<21>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<22>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<23>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<24>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<25>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<26>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<27>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<28>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<29>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<30>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| a<31>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<0>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<1>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<2>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<3>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<4>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<5>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<6>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<7>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<8>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<9>                               | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<10>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<11>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<12>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<13>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<14>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<15>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<16>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<17>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<18>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<19>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<20>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<21>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<22>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<23>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<24>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<25>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<26>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<27>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<28>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<29>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<30>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| b<31>                              | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| out<0>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<1>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<2>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<3>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<4>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<5>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<6>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<7>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<8>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<9>                             | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<10>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<11>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<12>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<13>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<14>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<15>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<16>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<17>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<18>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<19>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<20>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<21>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<22>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<23>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<24>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<25>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<26>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<27>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<28>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<29>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<30>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| out<31>                            | IOB              | OUTPUT    | LVCMOS25             | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| selector<0>                        | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| selector<1>                        | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
+| selector<2>                        | IBUF             | INPUT     | LVCMOS25             |          |         |              |          | 0 / 0    |                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,47 @@
+module Forwarding_Control (
+	input [4:0] EXRd, MEMRd, IDRs, IDRt,IFRs,IFRt;
+	input EXRegWrite, MEMRegWrite;
+	output C,D;
+	output [1:0] A, B
+	);
+	reg [1:0] A, B;
+	reg C,D;
+	wire nozEXrd,nozMEMrd,eqEXrs,eqEXrt,eqMEMrs,eqMEMrt;
+	
+	assign nozEXrd=(EXRd==0)?0:1;
+	assign nozMEMrd=(MEMRd==0)?0:1;
+	assign eqEXrs=(EXRd==IDRs)?1:0;
+	assign eqEXrt=(EXRd==IDRt)?1:0;
+	assign eqMEMrs=(MEMRd==IDRs)?1:0;
+	assign eqMEMrt=(MEMRd==IDRt)?1:0;
+	assign equal_WB_ID_rs=(MEMRd==IFRs)?1:0;
+	assign equal_WB_ID_rt=(MEMRd==IFRt)?1:0;
+	
+	always@* begin
+		if(EXRegWrite & nozEXrd & eqEXrs)
+			A<=2'b10;
+		else if (MEMRegWrite & nozMEMrd & eqMEMrs)
+			A<=2'b01;
+		else 
+			A<=2'b00;
+			
+		if(EXRegWrite & nozEXrd & eqEXrt)
+			B<=2'b10;
+		else if (MEMRegWrite & nozMEMrd & eqMEMrt)
+			B<=2'b01;
+		else 
+			B<=2'b00;
+			
+		if(MEMRegWrite & nozMEMrd & equal_WB_ID_rs)
+			C<=1;
+		else
+			C<=0;
+			
+      if(MEMRegWrite & nozMEMrd & equal_WB_ID_rt)
+			D<=1;
+		else
+			D<=0;
+		
+	end
+	
+endmodule

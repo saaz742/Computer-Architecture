@@ -1,0 +1,22 @@
+Fitter Status : Successful - Sun Apr 11 19:47:07 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : caprj4
+Top-level Entity Name : caprj4
+Family : Arria II GZ
+Device : EP2AGZ225FF35C3
+Timing Models : Final
+Logic utilization : 1 %
+    Combinational ALUTs : 736 / 179,200 ( < 1 % )
+    Memory ALUTs : 0 / 89,600 ( 0 % )
+    Dedicated logic registers : 1,024 / 179,200 ( < 1 % )
+Total registers : 1024
+Total pins : 146 / 634 ( 23 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 11,381,760 ( 0 % )
+DSP block 18-bit elements : 0 / 800 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 16 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 16 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 16 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 16 ( 0 % )
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

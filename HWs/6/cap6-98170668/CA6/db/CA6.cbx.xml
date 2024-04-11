@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CA6">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6|lpm_add_sub0:inst68|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_2nh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6|lpm_add_sub0:inst77|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_2nh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6|lpm_clshift1:inst4|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_0lb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6|lpm_mux0:inst66|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_hue.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6|lpm_mux1:inst41|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_2de.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6|lpm_mux3:inst3|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_nbe.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6|lpm_clshift0:inst6|lpm_clshift:LPM_CLSHIFT_component" CBX_FILE_NAME="lpm_clshift_rkb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CA6|lpm_mux4:inst5|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_dbe.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
